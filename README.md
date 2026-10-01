@@ -4,6 +4,16 @@ Patch para executar **Skyrim Platform e Meridian UI no mesmo processo**, usando 
 
 **Estado em 01/10/2026: testes encerrados e publicação aprovada pelo usuário após sucesso de abertura no perfil oficial de Qualidade. 26 testes Node e 2 CTest aprovados. O release documenta esse escopo; não afirma homologação de login, voz, multiplayer ou estabilidade prolongada.**
 
+Releases publicados e assets/tags conferidos no GitHub:
+
+- [Patch v0.1.0](https://github.com/mercurius17/CompatibilidadeMeridianPlatform/releases/tag/v0.1.0).
+- [Client v0.8.2](https://github.com/AetheriusRP/aetherius-client/releases/tag/v0.8.2).
+- [Mod de compatibilidade v1.0.0](https://github.com/AetheriusRP/aetherius-mods/releases/tag/AETHERIUS.-.MERIDIAN.-.COMPATIBILIDADE-v1.0.0).
+
+Feche o jogo e use VERIFICAR no launcher para atualizar. A consulta real da API
+confirmou o client v0.8.2 como primeiro release publicado, com o único ZIP correto.
+Registro completo: [publicação](reports/publication-20261001.json).
+
 O smoke inicial confirmou carregamento conjunto e CEF 152, mas encontrou erro de `PluginsDev`. A contribuição recebida relata correção desse erro e fechamento normal no par `current-20261001-034454`, sem inspeção dos módulos. A revisão independente confirmou testes e bundle recebido, acrescentou proteções de fechamento, foco/PTT e saída na thread do jogo. O novo `candidate-20261001-090924` completou dois ciclos no menu: hashes das DLLs/Node conferidos em execução, um CEF 152 e nenhum subprocesso legado nos snapshots, sem erro DirectoryMonitor/JS. Em ambos, o botão Fechar acionou a saída na thread do jogo e o CEF encerrou com sucesso. **UI completa, perfis completos e homologação continuam pendentes.** Consulte [a revisão completa](docs/REVISAO-CONTINUACAO.md).
 
 ## Conteúdo

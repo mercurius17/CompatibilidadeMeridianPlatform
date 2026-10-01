@@ -14,6 +14,16 @@ O repositório Aetherius omitiu o submódulo vcpkg. O pin acima foi recuperado d
 
 Snapshots isolados em branches compat/meridian-ui estavam sem commits da implementação. O repositório de compatibilidade é um novo snapshot; não afirma ser a origem histórica dos releases anteriores. `reports/current-source-changes.json` registra a implementação da publicação inicial. A revisão posterior preserva a contribuição baseada em `9826b86` e registra seus novos hashes em `reports/candidate-20261001-090924-source-hashes.json`.
 
+O release do patch v0.1.0 aponta para
+`a86555acfaada3934dd115a1fa2a33a50e1e7c8a`; o client v0.8.2 aponta para
+`88bb3ac033e54547e0adec5ccbb1aec263986ba3`. A mudança posterior de distribuição
+adiciona somente uma linha nas duas modlists oficiais e não recompila DLLs ou
+bundle. O inventário do candidato registra o estágio de build anterior a essa
+mudança de perfis; o relatório de release registra os arquivos distribuídos.
+O snapshot público conserva bytes dos fontes; o Git do client conserva sua
+normalização de texto preexistente. IDs de release, assets e digests remotos
+estão em `reports/publication-20261001.json`.
+
 ## Ambiente da compilação realizada
 
 Windows x64; Visual Studio 2022 Build Tools; MSVC 19.44.35228 / VC 14.44.35207; Windows SDK 10.0.26100.0; CMake 4.3.0-rc3; triplet x64-windows-sp; CommonLib SE+AE flatrim, VR desativado; Frida 16.0.19; Node prebuilt do overlay original. Mantidos pins, patches e opções do projeto, sem migração de biblioteca.

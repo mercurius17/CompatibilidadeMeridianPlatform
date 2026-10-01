@@ -84,7 +84,7 @@ As DLLs dessa correção estão em `binaries/current-20261001-034454`. A contrib
 - Guarda de push-to-talk durante digitação e remoção de debug logs contendo campos de credenciais.
 - Proveniência do SDK, testes automatizados, scripts de inspeção e hashes.
 
-## O que não está aprovado
+## Validação por escopo
 
 | Item | Estado |
 |---|---|
@@ -101,12 +101,12 @@ As DLLs dessa correção estão em `binaries/current-20261001-034454`. A contrib
 | Shutdown/reabertura e sessão prolongada | Dois ciclos mínimos confirmados; estabilidade e perfis completos pendentes |
 | Perfis completos Qualidade/Performance | Pendente |
 | Instalação limpa, atualização e recuperação | Pendente |
-| Pacote/release oficial | Publicação solicitada; pacote v0.8.2 e mod com hashes verificados; confirmação no relatório de publicação |
+| Pacote/release oficial | Patch v0.1.0, client v0.8.2 e mod v1.0.0 publicados; hashes, tags e seleção do launcher confirmados no relatório de publicação |
 | Prévia local de client | ZIP com estrutura client/ e entradas verificadas; baseline histórica, não instalar/publicar |
 
 O HTML baseline tem o scaffold de chat textual comentado. Este trabalho não habilitou nem inventou um protocolo de chat; essa limitação precisa ser esclarecida antes de aprovar o requisito original de chat. Voz mantém o WebSocket original; origem mod://, permissões e efeitos sobre áudio ainda dependem de teste real.
 
-## Ponto de retomada
+## Prévia histórica e encerramento
 
 Após os dois ciclos mínimos, o usuário pediu somente teste de abertura usando
 o perfil oficial de Qualidade, com o mod TESTE ativado por ele. Esse carregamento
@@ -115,4 +115,10 @@ prévia local do pacote: `client-preview-20261001-094535`. Ela conserva profiles
 históricos e recursos CEF antigos, portanto ainda não é instalável/aprovada para
 o launcher. Próximos passos offline: revisar baseline/perfis atuais, consumidores
 das dependências e licenças. Login, voz e multiplayer continuam não homologados;
-nenhum release foi publicado.
+os testes foram encerrados por solicitação do usuário, que aprovou a abertura
+e autorizou a distribuição. A baseline v0.8.1 foi reconferida remotamente e o
+pacote final conserva seus arquivos, acrescentando somente o overlay/avisos e
+uma linha de prioridade nas duas modlists. Os três releases estão publicados;
+o launcher seleciona v0.8.2 e o release anterior permanece intacto. Ver
+[registro remoto](../reports/publication-20261001.json). Não foram feitos novos
+testes no jogo nem alterações locais na instalação do jogo/MO2 nesta publicação.

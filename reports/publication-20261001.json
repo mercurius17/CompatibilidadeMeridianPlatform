@@ -1,0 +1,105 @@
+{
+  "schema": 1,
+  "verifiedUtc": "2026-10-01T10:14:03.3629769Z",
+  "status": "published and remotely verified",
+  "userApproval": "Tests ended; startup success accepted; publication explicitly requested",
+  "newGameTests": false,
+  "productionScope": "Compatibility startup correction; gameplay/login/voice/Performance not homologated",
+  "releases": [
+    {
+      "repo": "mercurius17/CompatibilidadeMeridianPlatform",
+      "id": 400847282,
+      "tag": "v0.1.0",
+      "url": "https://github.com/mercurius17/CompatibilidadeMeridianPlatform/releases/tag/v0.1.0",
+      "publishedAt": "2026-10-01T10:12:49Z",
+      "draft": false,
+      "prerelease": true,
+      "sourceCommit": "a86555acfaada3934dd115a1fa2a33a50e1e7c8a",
+      "assets": [
+        {
+          "id": 602967520,
+          "name": "AETHERIUS.-.MERIDIAN.-.COMPATIBILIDADE.zip",
+          "bytes": 40709415,
+          "sha256": "sha256:589c874063e56fa3d89beb12432a3bdfdb5671695b69b407f86ab082df88801b",
+          "state": "uploaded"
+        },
+        {
+          "id": 602967519,
+          "name": "candidate-20261001-090924-pdb.zip",
+          "bytes": 27219610,
+          "sha256": "sha256:c67f06de9043bcf7302423e77444d8d335a75a6c8acb7eff91e2fe1df684a555",
+          "state": "uploaded"
+        },
+        {
+          "id": 602967523,
+          "name": "release-package-v0.8.2.json",
+          "bytes": 24807,
+          "sha256": "sha256:1f576d7b66134c4ac81d076cdbad2b1d7af92e95ac9f5c4fac47241e4d4a9803",
+          "state": "uploaded"
+        },
+        {
+          "id": 602967515,
+          "name": "SHA256SUMS.txt",
+          "bytes": 293,
+          "sha256": "sha256:40f7592242618c058bb70c2a176903c4de72c166c6a5285c8b3e1ad4d26819fa",
+          "state": "uploaded"
+        }
+      ]
+    },
+    {
+      "repo": "AetheriusRP/aetherius-mods",
+      "id": 400847272,
+      "tag": "AETHERIUS.-.MERIDIAN.-.COMPATIBILIDADE-v1.0.0",
+      "url": "https://github.com/AetheriusRP/aetherius-mods/releases/tag/AETHERIUS.-.MERIDIAN.-.COMPATIBILIDADE-v1.0.0",
+      "publishedAt": "2026-10-01T10:12:51Z",
+      "draft": false,
+      "prerelease": false,
+      "sourceCommit": "aa9e06dc6c01ed8d0d653c5b367651d43bccdd74",
+      "assets": [
+        {
+          "id": 602967496,
+          "name": "AETHERIUS.-.MERIDIAN.-.COMPATIBILIDADE.zip",
+          "bytes": 40709415,
+          "sha256": "sha256:589c874063e56fa3d89beb12432a3bdfdb5671695b69b407f86ab082df88801b",
+          "state": "uploaded"
+        }
+      ]
+    },
+    {
+      "repo": "AetheriusRP/aetherius-client",
+      "id": 400847275,
+      "tag": "v0.8.2",
+      "url": "https://github.com/AetheriusRP/aetherius-client/releases/tag/v0.8.2",
+      "publishedAt": "2026-10-01T10:12:53Z",
+      "draft": false,
+      "prerelease": true,
+      "sourceCommit": "88bb3ac033e54547e0adec5ccbb1aec263986ba3",
+      "assets": [
+        {
+          "id": 602967503,
+          "name": "client-v0.8.2.zip",
+          "bytes": 434717285,
+          "sha256": "sha256:51f63da130714b737e25a4c46c8b547994a3f17c24546d5947ce9fa29f682550",
+          "state": "uploaded"
+        }
+      ]
+    }
+  ],
+  "launcherSelection": {
+    "firstPublishedClient": "v0.8.2",
+    "zipCount": 1,
+    "asset": "client-v0.8.2.zip"
+  },
+  "previousClientPreserved": {
+    "sha256": "sha256:4bd9615ab3211805a51a34f901fb92b0dfd98af82a1b98ddaad5dcc0bb18b2c7",
+    "assetId": 602197793,
+    "tag": "v0.8.1"
+  },
+  "serverUnchanged": {
+    "assetId": 598498140,
+    "tag": "v0.8.0"
+  },
+  "launcherCodeUnchanged": true,
+  "gameWrites": false,
+  "mo2Writes": false
+}

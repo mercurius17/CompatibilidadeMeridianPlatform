@@ -7,6 +7,12 @@ Performance e sessões prolongadas continuam sem validação real.
 
 ## Distribuições
 
+Publicação concluída e verificada remotamente: todos os drafts abaixo foram
+publicados; os assets estão completos e seus hashes coincidem com os locais.
+A seleção da API usada pelo launcher aponta para v0.8.2 e seu único ZIP.
+O v0.8.1 foi reconferido e permanece com o mesmo asset/digest. O relatório
+`reports/publication-20261001.json` registra IDs, commits e horários reais.
+
 - CompatibilidadeMeridianPlatform `v0.1.0`: fontes correspondentes, histórico,
   DLLs do candidato 090924, evidências, scripts, símbolos e overlay instalável.
 - Aetherius Client `v0.8.2`, asset único `client-v0.8.2.zip`, com raiz `client/`.
