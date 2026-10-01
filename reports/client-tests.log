@@ -1,0 +1,81 @@
+TAP version 13
+# Subtest: queued messages snapshot JSON values and preserve argument order/Unicode
+ok 1 - queued messages snapshot JSON values and preserve argument order/Unicode
+  ---
+  duration_ms: 2.5291
+  ...
+# Subtest: front-loaded follows DOM readiness, once, after bridge-ready
+ok 2 - front-loaded follows DOM readiness, once, after bridge-ready
+  ---
+  duration_ms: 0.8327
+  ...
+# Subtest: DOMContentLoaded before attachment still sends front-loaded exactly once
+ok 3 - DOMContentLoaded before attachment still sends front-loaded exactly once
+  ---
+  duration_ms: 0.6863
+  ...
+# Subtest: invalid/replaced generation cannot attach or relabel old work
+ok 4 - invalid/replaced generation cannot attach or relabel old work
+  ---
+  duration_ms: 1.2083
+  ...
+# Subtest: provider missing does not drop queued messages
+ok 5 - provider missing does not drop queued messages
+  ---
+  duration_ms: 0.8469
+  ...
+# Subtest: queue count, UTF-8 byte and argument limits are enforced
+ok 6 - queue count, UTF-8 byte and argument limits are enforced
+  ---
+  duration_ms: 7.9892
+  ...
+# Subtest: unsupported/cyclic values are explicit errors, not changed wire types
+ok 7 - unsupported/cyclic values are explicit errors, not changed wire types
+  ---
+  duration_ms: 0.992
+  ...
+# Subtest: pagehide cancels queued work and rejects subsequent sends
+ok 8 - pagehide cancels queued work and rejects subsequent sends
+  ---
+  duration_ms: 0.7643
+  ...
+# Subtest: focused shortcuts forward once; modal close and repeated keys are respected
+ok 9 - focused shortcuts forward once; modal close and repeated keys are respected
+  ---
+  duration_ms: 1.0239
+  ...
+# Subtest: BrowserService reports actual focus, not an asynchronous request
+ok 10 - BrowserService reports actual focus, not an asynchronous request
+  ---
+  duration_ms: 106.9317
+  ...
+# Subtest: browserMessage contract forwards readiness and focused close shortcuts
+ok 11 - browserMessage contract forwards readiness and focused close shortcuts
+  ---
+  duration_ms: 22.5617
+  ...
+# Subtest: PTT typing guard releases V on browser focus and resumes outside it
+ok 12 - PTT typing guard releases V on browser focus and resumes outside it
+  ---
+  duration_ms: 7.7144
+  ...
+# Subtest: form/input/password/button contract preserves callbacks without HTML evaluation
+ok 13 - form/input/password/button contract preserves callbacks without HTML evaluation
+  ---
+  duration_ms: 2.5551
+  ...
+# Subtest: invalid widget updates cannot clear a previously valid form; empty array clears it
+ok 14 - invalid widget updates cannot clear a previously valid form; empty array clears it
+  ---
+  duration_ms: 1.185
+  ...
+1..14
+# tests 14
+# suites 0
+# pass 14
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 394.7593
+

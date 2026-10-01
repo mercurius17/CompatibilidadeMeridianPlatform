@@ -1,0 +1,21 @@
+Versão do MSBuild 17.14.51+25f168cee para .NET Framework
+
+  savefile.vcxproj -> <WORKSPACE>\aetherius-runtime-meridian\build\savefile\Release\savefile.lib
+  serialization.vcxproj -> <WORKSPACE>\aetherius-runtime-meridian\build\serialization\Release\serialization.lib
+  skyrim_plugin_resources.vcxproj -> <WORKSPACE>\aetherius-runtime-meridian\build\skyrim-platform\_platform_se\Release\skyrim_plugin_resources.lib
+  viet.vcxproj -> <WORKSPACE>\aetherius-runtime-meridian\build\viet\Release\viet.lib
+  core_library.vcxproj -> <WORKSPACE>\aetherius-runtime-meridian\build\skyrim-platform\_platform_se\Release\core_library.lib
+  reverse.vcxproj -> <WORKSPACE>\aetherius-runtime-meridian\build\skyrim-platform\_platform_se\Release\reverse.lib
+  platform_lib.vcxproj -> <WORKSPACE>\aetherius-runtime-meridian\build\skyrim-platform\_platform_lib\Release\platform_lib.lib
+  papyrus-vm-lib.vcxproj -> <WORKSPACE>\aetherius-runtime-meridian\build\papyrus-vm\Release\papyrus-vm-lib.lib
+  hooks.vcxproj -> <WORKSPACE>\aetherius-runtime-meridian\build\skyrim-platform\_platform_se\Release\hooks.lib
+  BrowserApiMeridian.cpp
+  Settings.cpp
+     Criando biblioteca <WORKSPACE>/aetherius-runtime-meridian/build/skyrim-platform/_platform_se/Release/SkyrimPlatformImpl.lib e objeto <WORKSPACE>/aetherius-runtime-meridian/build/skyrim-platform/_platform_se/Release/SkyrimPlatformImpl.exp
+  skyrim_platform.vcxproj -> <WORKSPACE>\aetherius-runtime-meridian\build\skyrim-platform\_platform_se\bin\Release\SkyrimPlatformImpl.dll
+Versão do MSBuild 17.14.51+25f168cee para .NET Framework
+
+  __skyrim_platform_entryPlugin.cpp
+     Criando biblioteca <WORKSPACE>/aetherius-runtime-meridian/build/skyrim-platform/_platform_se/Release/SkyrimPlatform.lib e objeto <WORKSPACE>/aetherius-runtime-meridian/build/skyrim-platform/_platform_se/Release/SkyrimPlatform.exp
+  skyrim_platform_entry.vcxproj -> <WORKSPACE>\aetherius-runtime-meridian\build\skyrim-platform\_platform_se\bin\Release\SkyrimPlatform.dll
+

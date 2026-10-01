@@ -1,0 +1,38 @@
+[
+  {
+    "candidate": "current-20261001-034454",
+    "file": "SkyrimPlatform.dll",
+    "bytes": 140288,
+    "sha256": "2A3E39D949DBBEEE35ECE867EB3E875E07FED917945FB3FFA88C00BAB644D59C"
+  },
+  {
+    "candidate": "current-20261001-034454",
+    "file": "SkyrimPlatformImpl.dll",
+    "bytes": 15400960,
+    "sha256": "75678B5A2FAC8B6653DEBDBE0D3C0A580FE58759EAF076E3FDEF6CE07E37050C"
+  },
+  {
+    "candidate": "smoke-tested-20261001-033633",
+    "file": "SkyrimPlatform.dll",
+    "bytes": 140288,
+    "sha256": "DCD945F7C14A18DBFCF1C326CA4F186D5EF003EFCB0F806BEEC0E251D8BC7D58"
+  },
+  {
+    "candidate": "smoke-tested-20261001-033633",
+    "file": "SkyrimPlatformImpl.dll",
+    "bytes": 15400960,
+    "sha256": "5E5AD3F962ECD1017776181422285D9C0B1403D775E2FC37CF8D7D7B962C6509"
+  },
+  {
+    "candidate": "control-legacy",
+    "file": "SkyrimPlatform.dll",
+    "bytes": 149504,
+    "sha256": "A896A207D678A8E006DC9BEFBCDDDDA14A57060C1B34AEFB5B2D32519D2BEE2C"
+  },
+  {
+    "candidate": "control-legacy",
+    "file": "SkyrimPlatformImpl.dll",
+    "bytes": 15669248,
+    "sha256": "CD65E843D69224B3C7AEE21EE79C2E0ADE8DBD65F03D8A785AB9F473A4604B4A"
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "enabled": true,
+  "hostileOnly": true,
+  "hostileFactions": [
+    "1bcc0:Skyrim.esm",
+    "43599:Skyrim.esm",
+    "2430d:Skyrim.esm",
+    "2997e:Skyrim.esm",
+    "27242:Skyrim.esm",
+    "43597:Skyrim.esm",
+    "43594:Skyrim.esm",
+    "4359e:Skyrim.esm",
+    "3e094:Skyrim.esm",
+    "26724:Skyrim.esm",
+    "34b74:Skyrim.esm"
+  ],
+  "hostileAllowlist": [],
+  "blockedBaseDescs": [],
+  "safeRadius": 5000,
+  "sweepIntervalMs": 60000
+}

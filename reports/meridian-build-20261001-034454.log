@@ -1,0 +1,40 @@
+Versão do MSBuild 17.14.51+25f168cee para .NET Framework
+
+  core_library.vcxproj -> <WORKSPACE>\aetherius-runtime-meridian\build\skyrim-platform\_platform_se\Release\core_library.lib
+  viet.vcxproj -> <WORKSPACE>\aetherius-runtime-meridian\build\viet\Release\viet.lib
+  serialization.vcxproj -> <WORKSPACE>\aetherius-runtime-meridian\build\serialization\Release\serialization.lib
+  platform_lib.vcxproj -> <WORKSPACE>\aetherius-runtime-meridian\build\skyrim-platform\_platform_lib\Release\platform_lib.lib
+  papyrus-vm-lib.vcxproj -> <WORKSPACE>\aetherius-runtime-meridian\build\papyrus-vm\Release\papyrus-vm-lib.lib
+  reverse.vcxproj -> <WORKSPACE>\aetherius-runtime-meridian\build\skyrim-platform\_platform_se\Release\reverse.lib
+  savefile.vcxproj -> <WORKSPACE>\aetherius-runtime-meridian\build\savefile\Release\savefile.lib
+  skyrim_plugin_resources.vcxproj -> <WORKSPACE>\aetherius-runtime-meridian\build\skyrim-platform\_platform_se\Release\skyrim_plugin_resources.lib
+  hooks.vcxproj -> <WORKSPACE>\aetherius-runtime-meridian\build\skyrim-platform\_platform_se\Release\hooks.lib
+  BrowserApi.cpp
+  DevApi.cpp
+  MeridianTextSnapshot.cpp
+  Settings.cpp
+  SkyrimPlatform.cpp
+  main.cpp
+<WORKSPACE>\aetherius-runtime-meridian\skyrim-platform\src\platform_se\skyrim_platform\TextsCollection.h(57,62): warning C4267: 'return': conversão de 'size_t' para 'int', possível perda de dados [<WORKSPACE>\aetherius-runtime-meridian\build\skyrim-platform\_platform_se\skyrim_platform.vcxproj]
+  (compilando o arquivo fonte '../../../skyrim-platform/src/platform_se/skyrim_platform/MeridianTextSnapshot.cpp')
+  
+<WORKSPACE>\aetherius-runtime-meridian\skyrim-platform\src\platform_se\skyrim_platform\DevApi.cpp(182,68): warning C4244: 'argumento': conversão de 'size_t' para 'double', possível perda de dados [<WORKSPACE>\aetherius-runtime-meridian\build\skyrim-platform\_platform_se\skyrim_platform.vcxproj]
+  (compilando o arquivo fonte '../../../skyrim-platform/src/platform_se/skyrim_platform/DevApi.cpp')
+  
+<WORKSPACE>\aetherius-runtime-meridian\skyrim-platform\src\platform_se\skyrim_platform\TextsCollection.h(57,62): warning C4267: 'return': conversão de 'size_t' para 'int', possível perda de dados [<WORKSPACE>\aetherius-runtime-meridian\build\skyrim-platform\_platform_se\skyrim_platform.vcxproj]
+  (compilando o arquivo fonte '../../../skyrim-platform/src/platform_se/skyrim_platform/SkyrimPlatform.cpp')
+  
+<WORKSPACE>\aetherius-runtime-meridian\skyrim-platform\src\platform_se\skyrim_platform\SkyrimPlatform.cpp(152,32): warning C4101: 'e': variável local não referenciada [<WORKSPACE>\aetherius-runtime-meridian\build\skyrim-platform\_platform_se\skyrim_platform.vcxproj]
+  (compilando o arquivo fonte '../../../skyrim-platform/src/platform_se/skyrim_platform/SkyrimPlatform.cpp')
+  
+<WORKSPACE>\aetherius-runtime-meridian\skyrim-platform\src\platform_se\skyrim_platform\TextsCollection.h(57,62): warning C4267: 'return': conversão de 'size_t' para 'int', possível perda de dados [<WORKSPACE>\aetherius-runtime-meridian\build\skyrim-platform\_platform_se\skyrim_platform.vcxproj]
+  (compilando o arquivo fonte '../../../skyrim-platform/src/platform_se/skyrim_platform/main.cpp')
+  
+     Criando biblioteca <WORKSPACE>/aetherius-runtime-meridian/build/skyrim-platform/_platform_se/Release/SkyrimPlatformImpl.lib e objeto <WORKSPACE>/aetherius-runtime-meridian/build/skyrim-platform/_platform_se/Release/SkyrimPlatformImpl.exp
+  skyrim_platform.vcxproj -> <WORKSPACE>\aetherius-runtime-meridian\build\skyrim-platform\_platform_se\bin\Release\SkyrimPlatformImpl.dll
+Versão do MSBuild 17.14.51+25f168cee para .NET Framework
+
+  __skyrim_platform_entryPlugin.cpp
+     Criando biblioteca <WORKSPACE>/aetherius-runtime-meridian/build/skyrim-platform/_platform_se/Release/SkyrimPlatform.lib e objeto <WORKSPACE>/aetherius-runtime-meridian/build/skyrim-platform/_platform_se/Release/SkyrimPlatform.exp
+  skyrim_platform_entry.vcxproj -> <WORKSPACE>\aetherius-runtime-meridian\build\skyrim-platform\_platform_se\bin\Release\SkyrimPlatform.dll
+

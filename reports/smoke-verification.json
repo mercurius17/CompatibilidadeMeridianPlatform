@@ -1,0 +1,50 @@
+{
+  "result": "PASS",
+  "zipFiles": 8,
+  "privateDllClosure": [
+    {
+      "file": "libnode.dll",
+      "imports": [
+        "dbghelp.dll",
+        "PSAPI.DLL",
+        "WS2_32.dll",
+        "CRYPT32.dll",
+        "ADVAPI32.dll",
+        "USER32.dll",
+        "ole32.dll",
+        "IPHLPAPI.DLL",
+        "SHELL32.dll",
+        "USERENV.dll",
+        "bcrypt.dll",
+        "KERNEL32.dll",
+        "WINMM.dll"
+      ],
+      "sha256": "F22C87FA55E3C0E8B5626FD94C801BA7F1BF581E6FA555CE702C44E553D2D210"
+    },
+    {
+      "file": "SkyrimPlatformImpl.dll",
+      "imports": [
+        "WS2_32.dll",
+        "libnode.dll",
+        "ADVAPI32.dll",
+        "ole32.dll",
+        "CRYPT32.dll",
+        "KERNEL32.dll",
+        "USER32.dll",
+        "SHELL32.dll",
+        "VERSION.dll"
+      ],
+      "sha256": "5E5AD3F962ECD1017776181422285D9C0B1403D775E2FC37CF8D7D7B962C6509"
+    },
+    {
+      "file": "SkyrimPlatform.dll",
+      "imports": [
+        "KERNEL32.dll",
+        "USER32.dll"
+      ],
+      "sha256": "DCD945F7C14A18DBFCF1C326CA4F186D5EF003EFCB0F806BEEC0E251D8BC7D58"
+    }
+  ],
+  "coverage": "ZIP bytes, paths, staged files and static imports of all three private DLLs; Windows system DLLs are boundary leaves. Dynamic Meridian API and game behavior require runtime validation."
+}
+

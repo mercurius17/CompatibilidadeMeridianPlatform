@@ -1,0 +1,11 @@
+ignore:
+  - .git/
+  - '**/third_party'
+  - 'skymp5-scripts/'
+  - 'overlay_ports/rsm-bsa/*.patch'
+  - 'overlay_ports/libxml2/*'
+
+rules:
+  end-of-file:
+    enable: true
+    single-new-line: true

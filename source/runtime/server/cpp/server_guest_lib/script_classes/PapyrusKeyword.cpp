@@ -1,0 +1,46 @@
+#include "PapyrusKeyword.h"
+#include "WorldState.h"
+#include "script_objects/EspmGameObject.h"
+
+VarValue PapyrusKeyword::GetKeyword(VarValue self,
+                                    const std::vector<VarValue>& arguments)
+{
+  if (arguments.empty()) {
+    spdlog::error("Keyword.GetKeyword - at least one argument expected");
+    return VarValue::None();
+  }
+
+  CIString keywordName = arguments[0].GetType() == VarValue::kType_String
+    ? static_cast<const char*>(arguments[0])
+    : "";
+
+  for (auto it = keywords.rbegin(); it != keywords.rend(); ++it) {
+    for (auto itKeyword = (*it)->begin(); itKeyword != (*it)->end();
+         ++itKeyword) {
+      auto keyword = reinterpret_cast<const espm::KYWD*>(*itKeyword);
+      WorldState* worldState = compatibilityPolicy->GetWorldState();
+      CIString otherName =
+        keyword->GetData(worldState->GetEspmCache()).editorId;
+
+      if (otherName == keywordName) {
+        return VarValue(std::make_shared<EspmGameObject>(
+          worldState->GetEspm().GetBrowser().LookupById(keyword->GetId())));
+      }
+    }
+  }
+
+  return VarValue::None();
+}
+
+void PapyrusKeyword::Register(
+  VirtualMachine& vm, std::shared_ptr<IPapyrusCompatibilityPolicy> policy)
+{
+  compatibilityPolicy = policy;
+
+  keywords = compatibilityPolicy->GetWorldState()
+               ->GetEspm()
+               .GetBrowser()
+               .GetRecordsByType("KYWD");
+
+  AddStatic(vm, "GetKeyword", &PapyrusKeyword::GetKeyword);
+}

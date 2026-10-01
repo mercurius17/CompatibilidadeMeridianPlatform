@@ -1,0 +1,109 @@
+{
+  "schema": 1,
+  "createdUtc": "2026-10-01T03:36:36.3970394Z",
+  "status": "EXPERIMENTAL - NOT HOMOLOGATED - DO NOT PUBLISH",
+  "intendedUse": "MO2 test overlay only; not a launcher client package",
+  "game": "Steam 1.6.1170",
+  "skse": "2.2.6",
+  "meridian": "1.5.0 / Meridian.View/1",
+  "nativeBase": "1b8f9e4793cd188fb50e3b63cc474096fbf01359",
+  "clientBase": "113f10ef479dbd12a182b8763cee319f80a3d00e",
+  "vcpkgCommit": "cb2981c4e03d421fa03b9bb5044cd1986180e7e4",
+  "vcpkgPinOrigin": "upstream main gitlink inspected 2026-09-30; original Aetherius build pin is absent/unconfirmed",
+  "nativePe": [
+    {
+      "path": "<WORKSPACE>\\aetherius-runtime-meridian\\build\\skyrim-platform\\_platform_se\\bin\\Release\\SkyrimPlatform.dll",
+      "sha256": "DCD945F7C14A18DBFCF1C326CA4F186D5EF003EFCB0F806BEEC0E251D8BC7D58",
+      "fileVersion": "2.9.0.0",
+      "imports": [
+        "KERNEL32.dll",
+        "USER32.dll"
+      ],
+      "exports": [
+        "SKSEPlugin_Load",
+        "SKSEPlugin_Query",
+        "SKSEPlugin_Version",
+        "SkyrimPlatform_IpcSend",
+        "SkyrimPlatform_IpcSubscribe",
+        "SkyrimPlatform_IpcUnsubscribe"
+      ],
+      "requiredExportsPresent": true,
+      "directLegacyCefImport": false,
+      "coverage": "static direct imports and export names only; not recursive dependency/ABI/runtime validation"
+    },
+    {
+      "path": "<WORKSPACE>\\aetherius-runtime-meridian\\build\\skyrim-platform\\_platform_se\\bin\\Release\\SkyrimPlatformImpl.dll",
+      "sha256": "5E5AD3F962ECD1017776181422285D9C0B1403D775E2FC37CF8D7D7B962C6509",
+      "fileVersion": "2.9.0.0",
+      "imports": [
+        "WS2_32.dll",
+        "libnode.dll",
+        "ADVAPI32.dll",
+        "ole32.dll",
+        "CRYPT32.dll",
+        "KERNEL32.dll",
+        "USER32.dll",
+        "SHELL32.dll",
+        "VERSION.dll"
+      ],
+      "exports": [
+        "SKSEPlugin_Load_Impl",
+        "SkyrimPlatform_IpcSend_Impl",
+        "SkyrimPlatform_IpcSubscribe_Impl",
+        "SkyrimPlatform_IpcUnsubscribe_Impl"
+      ],
+      "requiredExportsPresent": true,
+      "directLegacyCefImport": false,
+      "coverage": "static direct imports and export names only; not recursive dependency/ABI/runtime validation"
+    }
+  ],
+  "entries": [
+    {
+      "path": "SKSE/Plugins/SkyrimPlatform.dll",
+      "bytes": 140288,
+      "sha256": "DCD945F7C14A18DBFCF1C326CA4F186D5EF003EFCB0F806BEEC0E251D8BC7D58"
+    },
+    {
+      "path": "Platform/Distribution/RuntimeDependencies/SkyrimPlatformImpl.dll",
+      "bytes": 15400960,
+      "sha256": "5E5AD3F962ECD1017776181422285D9C0B1403D775E2FC37CF8D7D7B962C6509"
+    },
+    {
+      "path": "Platform/Distribution/RuntimeDependencies/libnode.dll",
+      "bytes": 109094912,
+      "sha256": "F22C87FA55E3C0E8B5626FD94C801BA7F1BF581E6FA555CE702C44E553D2D210"
+    },
+    {
+      "path": "SKSE/Plugins/SkyrimPlatform.ini",
+      "bytes": 108,
+      "sha256": "285DE9B56FF8F7C9B14BD8882CDCB85A8B03AA832FDBD0127B0B9593683E2BFE"
+    },
+    {
+      "path": "MeridianUI/aetherius-client/index.html",
+      "bytes": 33910,
+      "sha256": "1371E2E684460EF01A7CC39583DBD9B000BF387AC1413593C4CEA82788E56111"
+    },
+    {
+      "path": "MeridianUI/aetherius-client/bootstrap.js",
+      "bytes": 3570,
+      "sha256": "2BF902305E70F93FCB8B79E57B9C4AB1BEA56BE19BC43C10FD3ECA905A3C7C79"
+    },
+    {
+      "path": "MeridianUI/aetherius-client/widgets.js",
+      "bytes": 2376,
+      "sha256": "4B4A5B8AAA026AA2706E67FE916D4482163B394C47A6AAF9A629328626C10A2A"
+    },
+    {
+      "path": "Platform/Plugins/skymp5-client.js",
+      "bytes": 1482288,
+      "sha256": "7F64276C0B913F6F2A9B037741B994D8D83E48AD59AFFAFCDD14553A3E39CF1B"
+    }
+  ],
+  "zipPath": "<WORKSPACE>\\outgoing\\meridian-test-20261001-033633\\aetherius-meridian-local-test.zip",
+  "zipSha256": "0099609A181B443E91E0953E49CB126EE2E81C50018BE7B282CF95F9A8B63D2B",
+  "sourceState": "working-tree candidate; base commits plus source file hashes accompany this local artifact",
+  "profiles": "unchanged; duplicate a profile for testing, never add this overlay to a published modlist",
+  "deployment": "none",
+  "release": "none"
+}
+

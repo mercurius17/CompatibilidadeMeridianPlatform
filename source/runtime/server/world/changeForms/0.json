@@ -1,0 +1,407 @@
+{
+  "angle": [
+    24.696292877197266,
+    0.0,
+    135.97268676757813
+  ],
+  "appearanceDump": {
+    "hairColor": 3154721,
+    "headTextureSetId": 0,
+    "headpartIds": [
+      333334,
+      333069,
+      977024,
+      534971,
+      976971,
+      865128,
+      865144,
+      865130,
+      977007
+    ],
+    "isFemale": false,
+    "name": "Teste1",
+    "options": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.800000011920929,
+      0.0,
+      -0.5,
+      -0.6000000238418579,
+      -0.8999999761581421,
+      0.6000000238418579,
+      0.0,
+      0.30000001192092896,
+      0.0,
+      0.0,
+      0.6000000238418579,
+      0.0,
+      0.0,
+      3.4028234663852886e+38
+    ],
+    "presets": [
+      0.0,
+      -1.0,
+      2.0,
+      1.0
+    ],
+    "raceId": 79685,
+    "skinColor": 11039807,
+    "tints": [
+      {
+        "argb": 2144495872,
+        "texturePath": "Actors\\Character\\Character Assets\\TintMasks\\SkinTone.dds",
+        "type": 6
+      },
+      {
+        "argb": 16777215,
+        "texturePath": "Actors\\Character\\Character Assets\\TintMasks\\KhajiitEyeSocketUpper.dds",
+        "type": 4
+      },
+      {
+        "argb": 16777215,
+        "texturePath": "Actors\\Character\\Character Assets\\TintMasks\\KhajiitEyeliner.dds",
+        "type": 3
+      },
+      {
+        "argb": 16777215,
+        "texturePath": "Actors\\Character\\Character Assets\\TintMasks\\KhajiitEyeSocketLower.dds",
+        "type": 5
+      },
+      {
+        "argb": 16777215,
+        "texturePath": "Actors\\Character\\Character Assets\\TintMasks\\KhajiitCheekColor.dds",
+        "type": 2
+      },
+      {
+        "argb": 16777215,
+        "texturePath": "Actors\\Character\\Character Assets\\TintMasks\\KhajiitCheekColorLower.dds",
+        "type": 9
+      },
+      {
+        "argb": -13688813,
+        "texturePath": "Actors\\Character\\Character Assets\\TintMasks\\KhajiitForehead.dds",
+        "type": 13
+      },
+      {
+        "argb": -822215171,
+        "texturePath": "Actors\\Character\\Character Assets\\TintMasks\\KhajiitChin.dds",
+        "type": 11
+      },
+      {
+        "argb": 16777215,
+        "texturePath": "Actors\\Character\\Character Assets\\TintMasks\\KhajiitLipColor.dds",
+        "type": 1
+      },
+      {
+        "argb": 16777215,
+        "texturePath": "Actors\\Character\\Character Assets\\TintMasks\\KhajiitLaughlines.dds",
+        "type": 8
+      },
+      {
+        "argb": 16777215,
+        "texturePath": "Actors\\Character\\Character Assets\\TintMasks\\KhajiitNeck.dds",
+        "type": 12
+      },
+      {
+        "argb": 0,
+        "texturePath": "Actors\\Character\\Character Assets\\TintMasks\\KhajiitStripes01.dds",
+        "type": 7
+      },
+      {
+        "argb": 0,
+        "texturePath": "Actors\\Character\\Character Assets\\TintMasks\\KhajiitStripes02.dds",
+        "type": 7
+      },
+      {
+        "argb": 0,
+        "texturePath": "Actors\\Character\\Character Assets\\TintMasks\\KhajiitStripes03.dds",
+        "type": 7
+      },
+      {
+        "argb": 0,
+        "texturePath": "Actors\\Character\\Character Assets\\TintMasks\\KhajiitStripes04.dds",
+        "type": 7
+      },
+      {
+        "argb": 0,
+        "texturePath": "Actors\\Character\\Character Assets\\TintMasks\\KhajiitPaint01.dds",
+        "type": 7
+      },
+      {
+        "argb": 0,
+        "texturePath": "Actors\\Character\\Character Assets\\TintMasks\\KhajiitPaint02.dds",
+        "type": 7
+      },
+      {
+        "argb": -1220344831,
+        "texturePath": "Actors\\Character\\Character Assets\\TintMasks\\KhajiitPaint03.dds",
+        "type": 7
+      },
+      {
+        "argb": 16777215,
+        "texturePath": "Actors\\Character\\Character Assets\\TintMasks\\KhajiitPaint04.dds",
+        "type": 7
+      },
+      {
+        "argb": 16777215,
+        "texturePath": "Actors\\Character\\Character Assets\\TintMasks\\KhajiitNose01.dds",
+        "type": 10
+      },
+      {
+        "argb": 16777215,
+        "texturePath": "Actors\\Character\\Character Assets\\TintMasks\\MaleHeadDirt_01.dds",
+        "type": 14
+      }
+    ],
+    "weight": 79.99999237060547
+  },
+  "baseContainerAdded": true,
+  "baseDesc": "7:Skyrim.esm",
+  "consoleCommandsAllowed": false,
+  "count": 0,
+  "dynamicFields": {
+    "private.discordRoles": []
+  },
+  "effects": [],
+  "equipmentDump": {
+    "instantSpell": 0,
+    "inv": {
+      "entries": [
+        {
+          "baseId": 77382,
+          "count": 1,
+          "worn": true
+        },
+        {
+          "baseId": 77385,
+          "count": 1,
+          "worn": true
+        },
+        {
+          "baseId": 77387,
+          "count": 1,
+          "worn": true
+        },
+        {
+          "baseId": 77389,
+          "count": 1,
+          "worn": true
+        },
+        {
+          "baseId": 80253,
+          "count": 1,
+          "worn": true
+        },
+        {
+          "baseId": 79760,
+          "count": 1,
+          "name": "Iron War Axe",
+          "worn": true
+        },
+        {
+          "baseId": 243042,
+          "count": 1
+        },
+        {
+          "baseId": 80253,
+          "count": 18
+        },
+        {
+          "baseId": 77494,
+          "count": 1,
+          "name": "Iron Shield"
+        },
+        {
+          "baseId": 77495,
+          "count": 1,
+          "name": "Iron Sword"
+        },
+        {
+          "baseId": 80254,
+          "count": 1,
+          "name": "Iron Dagger"
+        },
+        {
+          "baseId": 256810,
+          "count": 1,
+          "name": "Potion of the Warrior"
+        },
+        {
+          "baseId": 256819,
+          "count": 1,
+          "name": "Potion of Light Feet"
+        },
+        {
+          "baseId": 1017598,
+          "count": 1,
+          "name": "The Book of the Dragonborn"
+        },
+        {
+          "baseId": 120044,
+          "count": 2,
+          "name": "Torch"
+        },
+        {
+          "baseId": 236362,
+          "count": 2,
+          "name": "Potion of Resist Fire"
+        },
+        {
+          "baseId": 256733,
+          "count": 5,
+          "name": "Potion of Minor Healing"
+        },
+        {
+          "baseId": 256736,
+          "count": 5,
+          "name": "Potion of Minor Magicka"
+        },
+        {
+          "baseId": 256741,
+          "count": 5,
+          "name": "Potion of Minor Stamina"
+        },
+        {
+          "baseId": 10,
+          "count": 10,
+          "name": "Lockpick"
+        },
+        {
+          "baseId": 15,
+          "count": 140,
+          "name": "gold"
+        }
+      ]
+    },
+    "leftSpell": 0,
+    "numChanges": 7,
+    "rightSpell": 0,
+    "voiceSpell": 0
+  },
+  "formDesc": "0",
+  "healthPercentage": 1.0,
+  "healthRespawnPercentage": 1.0,
+  "inv": {
+    "entries": [
+      {
+        "baseId": 10,
+        "count": 10
+      },
+      {
+        "baseId": 15,
+        "count": 140
+      },
+      {
+        "baseId": 77382,
+        "count": 1
+      },
+      {
+        "baseId": 77385,
+        "count": 1
+      },
+      {
+        "baseId": 77387,
+        "count": 1
+      },
+      {
+        "baseId": 77389,
+        "count": 2
+      },
+      {
+        "baseId": 77494,
+        "count": 1
+      },
+      {
+        "baseId": 77495,
+        "count": 1
+      },
+      {
+        "baseId": 79760,
+        "count": 1
+      },
+      {
+        "baseId": 80253,
+        "count": 19
+      },
+      {
+        "baseId": 80254,
+        "count": 1
+      },
+      {
+        "baseId": 120044,
+        "count": 2
+      },
+      {
+        "baseId": 236362,
+        "count": 2
+      },
+      {
+        "baseId": 243042,
+        "count": 1
+      },
+      {
+        "baseId": 256733,
+        "count": 5
+      },
+      {
+        "baseId": 256736,
+        "count": 5
+      },
+      {
+        "baseId": 256741,
+        "count": 5
+      },
+      {
+        "baseId": 256810,
+        "count": 1
+      },
+      {
+        "baseId": 256819,
+        "count": 1
+      },
+      {
+        "baseId": 1017598,
+        "count": 1
+      },
+      {
+        "baseId": 202988,
+        "count": 1
+      }
+    ]
+  },
+  "isDead": false,
+  "isDeleted": false,
+  "isDisabled": true,
+  "isHarvested": false,
+  "isOpen": false,
+  "isRaceMenuOpen": false,
+  "learnedSpells": [],
+  "magickaPercentage": 1.0,
+  "magickaRespawnPercentage": 1.0,
+  "nextRelootDatetime": 0,
+  "position": [
+    1233.43505859375,
+    2401.3193359375,
+    -915.399658203125
+  ],
+  "profileId": 1,
+  "recType": 1,
+  "spawnDelay": 25.0,
+  "spawnPoint_cellOrWorldDesc": "3c:Skyrim.esm",
+  "spawnPoint_pos": [
+    133857.0,
+    -61130.0,
+    14662.0
+  ],
+  "spawnPoint_rot": [
+    0.0,
+    0.0,
+    72.0
+  ],
+  "staminaPercentage": 1.0,
+  "staminaRespawnPercentage": 1.0,
+  "worldOrCellDesc": "13a8a:Skyrim.esm"
+}

@@ -1,0 +1,12 @@
+{
+  "actorId": 4278190082,
+  "actorIdHex": "0xFF000002",
+  "ticket": "7ddce2083f78fb66aaacf495f56022f7",
+  "role": "sender",
+  "host": "104.234.65.67",
+  "port": 7778,
+  "issuedAt": "2026-08-21T13:39:46.035Z",
+  "expiresAt": "2026-08-21T13:40:16.035Z",
+  "ttlSeconds": 30,
+  "aviso": "ANDAIME DE TESTE. Desligue VOIP_DEBUG_EXPOSE_TICKET depois do teste."
+}

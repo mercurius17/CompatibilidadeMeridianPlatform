@@ -1,0 +1,64 @@
+{
+  "createdUtc": "2026-10-01T03:43:34.5511351Z",
+  "processId": 22576,
+  "startedUtc": "2026-10-01T03:42:10.0435866Z",
+  "selectedProfile": "selected_profile=@ByteArray(TESTE MERIDIAN - MINIMO - 20261001-033633)",
+  "selectedTestProfile": true,
+  "candidateDllsMatch": true,
+  "meridianProviderPresent": true,
+  "cefMajor152": true,
+  "legacySubprocessCount": 0,
+  "modules": [
+    {
+      "name": "MeridianUIPlugin.dll",
+      "path": "<MO2>\\mods\\Meridian UI - GPU Rendered User Interface for Skyrim - DLSS 5 Support\\SKSE\\Plugins\\MeridianUIPlugin.dll",
+      "fileVersion": "1.5.0.0",
+      "sha256": "7711079EECD7E05317E5889DB26E25A2D4DB9A89575ECC3521721E50A7E41794"
+    },
+    {
+      "name": "MeridianUI.dll",
+      "path": "<MO2>\\mods\\Meridian UI - GPU Rendered User Interface for Skyrim - DLSS 5 Support\\MeridianUI\\MeridianUI.dll",
+      "fileVersion": "1.5.0.0",
+      "sha256": "0384A21F296147941069523A3A410994DB6399CD4306C9293E9B66AD8C8FA0FE"
+    },
+    {
+      "name": "libcef.dll",
+      "path": "<MO2>\\mods\\Meridian UI - GPU Rendered User Interface for Skyrim - DLSS 5 Support\\MeridianUI\\libcef.dll",
+      "fileVersion": "152.0.6+g708dc14+chromium-152.0.7977.83",
+      "sha256": "05D04025A2D053970D663692EEBE0CEC0E754422B008119855A94307117431C5"
+    },
+    {
+      "name": "chrome_elf.dll",
+      "path": "<MO2>\\mods\\Meridian UI - GPU Rendered User Interface for Skyrim - DLSS 5 Support\\MeridianUI\\chrome_elf.dll",
+      "fileVersion": "152.0.7977.83",
+      "sha256": "62BE5F6E98A5F752F3BC261270A2F07F18C716C9BE5E898F585DCC77580EE75F"
+    },
+    {
+      "name": "SkyrimPlatform.dll",
+      "path": "<MO2>\\mods\\Aetherius - Meridian - TESTE - 20261001-033633\\SKSE\\Plugins\\SkyrimPlatform.dll",
+      "fileVersion": "2.9.0.0",
+      "sha256": "DCD945F7C14A18DBFCF1C326CA4F186D5EF003EFCB0F806BEEC0E251D8BC7D58"
+    },
+    {
+      "name": "SkyrimPlatformImpl.dll",
+      "path": "<MO2>\\mods\\Aetherius - Meridian - TESTE - 20261001-033633\\Platform\\Distribution\\RuntimeDependencies\\SkyrimPlatformImpl.dll",
+      "fileVersion": "2.9.0.0",
+      "sha256": "5E5AD3F962ECD1017776181422285D9C0B1403D775E2FC37CF8D7D7B962C6509"
+    },
+    {
+      "name": "libnode.dll",
+      "path": "<MO2>\\mods\\Aetherius - Meridian - TESTE - 20261001-033633\\Platform\\Distribution\\RuntimeDependencies\\libnode.dll",
+      "fileVersion": "23.2.0",
+      "sha256": "F22C87FA55E3C0E8B5626FD94C801BA7F1BF581E6FA555CE702C44E553D2D210"
+    },
+    {
+      "name": "MpClientPlugin.dll",
+      "path": "<GAME>\\Data\\SKSE\\Plugins\\MpClientPlugin.dll",
+      "fileVersion": null,
+      "sha256": "A35B6F35E00ABA5EFA558D6EFC97ADD20E5EA2014C8AAB54F442C798FEECE58C"
+    }
+  ],
+  "loadSnapshotPass": true,
+  "coverage": "One module/process snapshot only. Presence is not proof of successful SKSE initialization, bridge readiness, rendering, input, authentication, voice or stability."
+}
+

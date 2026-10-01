@@ -1,0 +1,146 @@
+Skyrim - Misc.bsa
+Skyrim - Shaders.bsa
+Skyrim - Interface.bsa
+Skyrim - Animations.bsa
+Skyrim - Meshes0.bsa
+Skyrim - Meshes1.bsa
+Skyrim - Sounds.bsa
+Skyrim - Voices_en0.bsa
+Skyrim - Textures0.bsa
+Skyrim - Textures1.bsa
+Skyrim - Textures2.bsa
+Skyrim - Textures3.bsa
+Skyrim - Textures4.bsa
+Skyrim - Textures5.bsa
+Skyrim - Textures6.bsa
+Skyrim - Textures7.bsa
+Skyrim - Textures8.bsa
+_ResourcePack.bsa
+ccBGSSSE037-Curios.bsa
+ccQDRSSE001-SurvivalMode.bsa
+ccBGSSSE001-Fish.bsa
+ccBGSSSE025-AdvDSGS.bsa
+Predator Vision - Textures.bsa
+Predator Vision.bsa
+unofficial skyrim special edition patch.bsa
+unofficial skyrim special edition patch - textures.bsa
+MCMHelper.bsa
+SkyUI_SE.bsa
+UIExtensions.bsa
+Particle Patch.bsa
+Northern Scenery _Tundra.bsa
+Northern Scenery _Tundra - Textures.bsa
+NorthernScenery_IronBindBarrow.bsa
+Northern Scenery_Angarvunde - Textures.bsa
+Northern Scenery_Angarvunde.bsa
+Northern Scenery_Ansilvund.bsa
+Northern Scenery_Ansilvund - Textures.bsa
+JKs Skyrim.bsa
+JKs Skyrim - Textures.bsa
+JK's Castle Volkihar.bsa
+JK's Castle Volkihar LOD.bsa
+JK's Fort Dawnguard.bsa
+JK's College of Winterhold.bsa
+JK's College of Winterhold - Textures.bsa
+JK's Sky Haven Temple.bsa
+JK's The Bards College.bsa
+JK's The Bards College - Textures.bsa
+JK's Dark Brotherhood Sanctuary.bsa
+JK's Thieves Guild.bsa
+JK's High Hrothgar.bsa
+JK's Palace of the Kings.bsa
+AlternativeRiften.bsa
+Grand Solitude - The Walls of High King Erling.bsa
+Grand Solitude - The Walls of High King Erling - Textures.bsa
+JKs-ClefJs Fort Dawnguard.bsa
+Resources - The Great Cities.bsa
+Resources - The Great Cities - Textures.bsa
+COTN - Falkreath - Textures.bsa
+COTN - Falkreath.bsa
+Fortified Morthal - Textures.bsa
+Fortified Morthal.bsa
+Stendarr Rising.bsa
+Stendarr Rising - Textures.bsa
+North Keep.bsa
+Lillemyr.bsa
+Falkhurst.bsa
+Neugrad.bsa
+New Weynon.bsa
+Greymoor.bsa
+Vernim Wood.bsa
+Stonehills.bsa
+Laintar Dale.bsa
+Amol Village.bsa
+Iggath.bsa
+AnotherOakwood.bsa
+Lainalten.bsa
+Dunpar Wall.bsa
+Granite Hill.bsa
+Reich Corigate.bsa
+Granitehall.bsa
+Amber Guard.bsa
+Sunthgat.bsa
+HammetDungeon01.bsa
+HammetDungeon02.bsa
+Obsidian Weathers.bsa
+SurvivalControlPanel.bsa
+Eli_LeatherBackpack.bsa
+Eli_LeatherBackpack - Textures.bsa
+RASS - Visual Effects - Textures.bsa
+RASS - Visual Effects.bsa
+Aetherius.bsa
+Mundus.bsa
+Pilgrim - Textures.bsa
+Pilgrim.bsa
+MysticismMagic.bsa
+Vokrii - Minimalistic Perks of Skyrim.bsa
+Vokrii - Minimalistic Perks of Skyrim - Textures.bsa
+Sorcerer.bsa
+LostGrimoire - Textures.bsa
+LostGrimoire.bsa
+Triumvirate - Mage Archetypes.bsa
+Triumvirate - Mage Archetypes - Textures.bsa
+WizardingTraversal.bsa
+Curse of the Vampire.bsa
+Curse of the Vampire - Textures.bsa
+Thaumaturgy.bsa
+Artificer.bsa
+Apothecary.bsa
+weapons armor clothing & clutter fixes - textures.bsa
+weapons armor clothing & clutter fixes.bsa
+waccf_armor and clothing extension - textures.bsa
+waccf_armor and clothing extension.bsa
+Black Mage Armor SE - Textures.bsa
+Black Mage Armor SE.bsa
+imp_helm_legend.bsa
+Apachii_DivineEleganceStore - Textures.bsa
+Apachii_DivineEleganceStore.bsa
+ccvsvsse003-necroarts.bsa
+Alchemist Outfit Variations - Textures.bsa
+DawnguardArsenal.bsa
+Armors of the Velothi.bsa
+Armors of the Velothi - Textures.bsa
+Armors of the Velothi PtI - My version by Xtudo.bsa
+Armors of the Velothi PtI - My version by Xtudo - Textures.bsa
+FurSet by keung.bsa
+FurSet by keung - Textures.bsa
+KS_Hairdo's_Lite_NoNPCs.bsa
+Beards of Power.bsa
+BVFE.bsa
+BVFE - Textures.bsa
+Vanilla hair remake_Unlocked.bsa
+BeastHHBB.bsa
+BeastHHBB - Textures.bsa
+Bandit War - Textures.bsa
+Bandit War.bsa
+Skyrim Revamped - Complete Enemy Overhaul.bsa
+Skyrim Revamped - Complete Enemy Overhaul - textures.bsa
+Better Vampire NPCs - Textures.bsa
+Better Vampire NPCs.bsa
+Next-Gen Decapitations.bsa
+DF - Official Creature Pack.bsa
+DF - Official Humanoid Pack.bsa
+Dismembering Framework.bsa
+Sanguine Symphony.bsa
+Sanguine Symphony - Textures.bsa
+SekiroCombat_II.bsa

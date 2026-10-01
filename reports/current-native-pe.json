@@ -1,0 +1,47 @@
+[
+  {
+    "path": "<WORKSPACE>\\aetherius-runtime-meridian\\build\\skyrim-platform\\_platform_se\\bin\\Release\\SkyrimPlatform.dll",
+    "sha256": "2A3E39D949DBBEEE35ECE867EB3E875E07FED917945FB3FFA88C00BAB644D59C",
+    "fileVersion": "2.9.0.0",
+    "imports": [
+      "KERNEL32.dll",
+      "USER32.dll"
+    ],
+    "exports": [
+      "SKSEPlugin_Load",
+      "SKSEPlugin_Query",
+      "SKSEPlugin_Version",
+      "SkyrimPlatform_IpcSend",
+      "SkyrimPlatform_IpcSubscribe",
+      "SkyrimPlatform_IpcUnsubscribe"
+    ],
+    "requiredExportsPresent": true,
+    "directLegacyCefImport": false,
+    "coverage": "static direct imports and export names only; not recursive dependency/ABI/runtime validation"
+  },
+  {
+    "path": "<WORKSPACE>\\aetherius-runtime-meridian\\build\\skyrim-platform\\_platform_se\\bin\\Release\\SkyrimPlatformImpl.dll",
+    "sha256": "75678B5A2FAC8B6653DEBDBE0D3C0A580FE58759EAF076E3FDEF6CE07E37050C",
+    "fileVersion": "2.9.0.0",
+    "imports": [
+      "WS2_32.dll",
+      "libnode.dll",
+      "ADVAPI32.dll",
+      "ole32.dll",
+      "CRYPT32.dll",
+      "KERNEL32.dll",
+      "USER32.dll",
+      "SHELL32.dll",
+      "VERSION.dll"
+    ],
+    "exports": [
+      "SKSEPlugin_Load_Impl",
+      "SkyrimPlatform_IpcSend_Impl",
+      "SkyrimPlatform_IpcSubscribe_Impl",
+      "SkyrimPlatform_IpcUnsubscribe_Impl"
+    ],
+    "requiredExportsPresent": true,
+    "directLegacyCefImport": false,
+    "coverage": "static direct imports and export names only; not recursive dependency/ABI/runtime validation"
+  }
+]

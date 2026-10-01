@@ -1,0 +1,198 @@
+[
+  {
+    "repository": "runtime",
+    "path": "cmake/apply_default_settings.cmake",
+    "sha256": "797EDA61EBA42C77EC2A2BE4F1F874FB233EFF0DA4D1702CD0A1F0233F9535F7"
+  },
+  {
+    "repository": "runtime",
+    "path": "skyrim-platform/src/platform_se/CMakeLists.txt",
+    "sha256": "853C0DD9F3DA64611343D61A3C66F87A20F4632465A15DDEDD225ECDD8493BF5"
+  },
+  {
+    "repository": "runtime",
+    "path": "skyrim-platform/src/platform_se/skyrim_platform_entry/main.cpp",
+    "sha256": "D9239A2347991C0D49E17BEB14CDD57D663885ACE235E80B122C687750C65E56"
+  },
+  {
+    "repository": "runtime",
+    "path": "skyrim-platform/src/platform_se/skyrim_platform/BrowserApi.cpp",
+    "sha256": "F9B18C86BF887F757AD32BFB3733689AC2DE1EB249D86BAB9DE6B096F0F686D2"
+  },
+  {
+    "repository": "runtime",
+    "path": "skyrim-platform/src/platform_se/skyrim_platform/BrowserApi.h",
+    "sha256": "22CB93E6991D4C932D9B9AC43AE7763DB10B94AA14BA3F3DE3531E79CC99935A"
+  },
+  {
+    "repository": "runtime",
+    "path": "skyrim-platform/src/platform_se/skyrim_platform/BrowserApiMeridian.cpp",
+    "sha256": "9AF078CEDBCED00254888850D104D38C88CA45C043B9656D75E38920B3241513"
+  },
+  {
+    "repository": "runtime",
+    "path": "skyrim-platform/src/platform_se/skyrim_platform/BrowserApiMeridian.h",
+    "sha256": "E58079273DB966D7BFD70EAC6D09EA142F63B37A7424380A0547EF71BB00786F"
+  },
+  {
+    "repository": "runtime",
+    "path": "skyrim-platform/src/platform_se/skyrim_platform/FridaHooks.cpp",
+    "sha256": "F7E040C6327A2F1DBB92AC550BEE2E28F9FBAAB15AC10C998BD8D004AD7CA3F7"
+  },
+  {
+    "repository": "runtime",
+    "path": "skyrim-platform/src/platform_se/skyrim_platform/main.cpp",
+    "sha256": "00D81828C52AC141447433FF21DF78E5436C1F18B434ACC5E8C81F401E4712CA"
+  },
+  {
+    "repository": "runtime",
+    "path": "skyrim-platform/src/platform_se/skyrim_platform/MeridianBrowserPolicy.h",
+    "sha256": "B54CEE19113E65C58FD4A0178552D841B894814EE2BA298CA1F8A0CAADC52529"
+  },
+  {
+    "repository": "runtime",
+    "path": "skyrim-platform/src/platform_se/skyrim_platform/MeridianTextRenderer.cpp",
+    "sha256": "E619C783CD22E84D939783A7E2B38C053D1F715523DAF573E919B95E68DFA19E"
+  },
+  {
+    "repository": "runtime",
+    "path": "skyrim-platform/src/platform_se/skyrim_platform/MeridianTextRenderer.h",
+    "sha256": "818CC6EDE35D720E84B36DB454313CC3772DA48C7C36EDB8ED5B4CA2C7A36E87"
+  },
+  {
+    "repository": "runtime",
+    "path": "skyrim-platform/src/platform_se/skyrim_platform/MeridianTextSnapshot.cpp",
+    "sha256": "2144519D5FD1F4EE4C645289ADEDFF27310760FB98009A462F8500CB0D4D1C07"
+  },
+  {
+    "repository": "runtime",
+    "path": "skyrim-platform/src/platform_se/skyrim_platform/MeridianTextSnapshot.h",
+    "sha256": "68E83B49456CDEF88BEBF508A1857AFAEB268DA5449FEC58CD5C4E5D7EDBA9B4"
+  },
+  {
+    "repository": "runtime",
+    "path": "skyrim-platform/src/platform_se/skyrim_platform/MeridianUIAPI/LICENSE-MIT",
+    "sha256": "0A4454C54414C45F33884F98B9A87A2DD3A1A4020C985E98A3D2B53C37CE2D80"
+  },
+  {
+    "repository": "runtime",
+    "path": "skyrim-platform/src/platform_se/skyrim_platform/MeridianUIAPI/PROVENANCE.md",
+    "sha256": "77EAAF70F7FA8806178CDAAA22893E0C25F489A96EABD2B24A6C6076D9BE8207"
+  },
+  {
+    "repository": "runtime",
+    "path": "skyrim-platform/src/platform_se/skyrim_platform/MeridianUIAPI/Settings.h",
+    "sha256": "FE34324EC97DC71D0639D224E781AA6E44972D281E1D186ED4FDC8F73EAD2AF5"
+  },
+  {
+    "repository": "runtime",
+    "path": "skyrim-platform/src/platform_se/skyrim_platform/MeridianUIAPI/ViewAPI.h",
+    "sha256": "5109417D1B8C82EAE88E557F95C3CF6FF411FFAEE9385CCA179606C9BD68389E"
+  },
+  {
+    "repository": "runtime",
+    "path": "skyrim-platform/src/platform_se/skyrim_platform/MeridianUIAPI/ViewDllLoader.h",
+    "sha256": "6013CF2DB33B1C146FA492655A092EC9B00C58096E8428F257BE81A4AB6AE062"
+  },
+  {
+    "repository": "runtime",
+    "path": "skyrim-platform/src/platform_se/skyrim_platform/MeridianViewOperations.h",
+    "sha256": "B32C569CF7CD1184F24406577CA79FFE27C4210A3543A42BDF1D12E693BFF7C6"
+  },
+  {
+    "repository": "runtime",
+    "path": "skyrim-platform/src/platform_se/skyrim_platform/PCH.h",
+    "sha256": "1A531384A5A3B6D7DFE5A0B615891B29F9AC7BF6F64AB4F8AE5B39E4E03FCF40"
+  },
+  {
+    "repository": "runtime",
+    "path": "skyrim-platform/src/platform_se/skyrim_platform/Settings.cpp",
+    "sha256": "384B57CFD589243086A588020AE247E8D11C979DC5C390D8D1397BDC322A1BC2"
+  },
+  {
+    "repository": "runtime",
+    "path": "skyrim-platform/src/platform_se/skyrim_platform/SkyrimPlatform.cpp",
+    "sha256": "1D5F7BD473CFA165D41897F148FA290F685B466FB986B771C8E7C43C42AFF0B4"
+  },
+  {
+    "repository": "runtime",
+    "path": "skyrim-platform/src/platform_se/skyrim_platform/SkyrimPlatform.h",
+    "sha256": "6C5E65C9B8BED89EE9C62CB07881F1D54B4B5365250062C4EB3BAA2EADDE5DB0"
+  },
+  {
+    "repository": "runtime",
+    "path": "skyrim-platform/tests/meridian/CMakeLists.txt",
+    "sha256": "365E22732F7566F1FEEA878F06EF6FE8FDEBA053144B2E6258E3AF2D1E4675B2"
+  },
+  {
+    "repository": "runtime",
+    "path": "skyrim-platform/tests/meridian/policy_test.cpp",
+    "sha256": "62F5FD847153667561D87BAE5BED4425F982CE223060F7392421AF73D4873BE3"
+  },
+  {
+    "repository": "runtime",
+    "path": "skyrim-platform/tests/meridian/view_test.cpp",
+    "sha256": "CB06D5CB0B74F8AE4F13A766EF39C5E661178AEB6AF5404E82F73A837DC60AA5"
+  },
+  {
+    "repository": "client",
+    "path": "client/index.html",
+    "sha256": "1371E2E684460EF01A7CC39583DBD9B000BF387AC1413593C4CEA82788E56111"
+  },
+  {
+    "repository": "client",
+    "path": "client/meridian/bootstrap.js",
+    "sha256": "2BF902305E70F93FCB8B79E57B9C4AB1BEA56BE19BC43C10FD3ECA905A3C7C79"
+  },
+  {
+    "repository": "client",
+    "path": "client/meridian/bootstrap.test.cjs",
+    "sha256": "0C08533798DE1983FD417638B79FBA97E0EEBE36E4A52443831073CDD74F7A94"
+  },
+  {
+    "repository": "client",
+    "path": "client/meridian/services.test.cjs",
+    "sha256": "C31087827C82DA62343ACD705D0B87D9A7CD54524F64CAF15CAAE494AD08BEF2"
+  },
+  {
+    "repository": "client",
+    "path": "client/meridian/SkyrimPlatform.ini",
+    "sha256": "285DE9B56FF8F7C9B14BD8882CDCB85A8B03AA832FDBD0127B0B9593683E2BFE"
+  },
+  {
+    "repository": "client",
+    "path": "client/meridian/widgets.js",
+    "sha256": "4B4A5B8AAA026AA2706E67FE916D4482163B394C47A6AAF9A629328626C10A2A"
+  },
+  {
+    "repository": "client",
+    "path": "client/meridian/widgets.test.cjs",
+    "sha256": "DA710E32201586EE3E2A25BC90FE6BE0A0FE489F65E2E6664C153FB8B37DD3AE"
+  },
+  {
+    "repository": "client",
+    "path": "client/package.json",
+    "sha256": "9F491438979FEA2B6A02F52C25265EF12147B7C115F61E86545C02EC34DE58C6"
+  },
+  {
+    "repository": "client",
+    "path": "client/src/services/services/authService.ts",
+    "sha256": "8A5C529A535DEEE3BFE60370DC5D39032EFFB4BF70D5975611EDB96CE5F1A808"
+  },
+  {
+    "repository": "client",
+    "path": "client/src/services/services/browserService.ts",
+    "sha256": "01D5F328BE438BA177FCFF9E95A166B12ED82250114711D633C069D71FFF3D19"
+  },
+  {
+    "repository": "client",
+    "path": "client/src/services/services/frontHotReloadService.ts",
+    "sha256": "F126C8A8CA6052E3F17A6561451C863FEAD77706A303A69EDB2676173B7D62B3"
+  },
+  {
+    "repository": "client",
+    "path": "client/src/services/services/Voiptoggleservice.ts",
+    "sha256": "E2BFB10F2D1E18C43A7A27EE3D80F2B471112338731B390BE907EEE6848DD521"
+  }
+]
+

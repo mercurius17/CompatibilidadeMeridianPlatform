@@ -1,0 +1,12 @@
+/build-work/
+/packages/
+/local-artifacts/
+**/node_modules/
+**/build/
+*.env
+.env*
+*.token
+*.key
+*.pem
+*.dmp
+*.tmp

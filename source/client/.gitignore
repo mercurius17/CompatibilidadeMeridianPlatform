@@ -1,0 +1,4 @@
+build/
+build-client.lnk
+client/build-client.bat
+PATCH_NOTES.md
