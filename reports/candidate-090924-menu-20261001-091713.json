@@ -1,0 +1,101 @@
+{
+  "capturedUtc": "2026-10-01T09:17:13.1315900Z",
+  "label": "candidate-090924-menu-20261001-0918",
+  "profile": [
+    "selected_profile=@ByteArray(TESTE MERIDIAN - MINIMO - 20261001-090924)"
+  ],
+  "currentGameProcessCount": 1,
+  "processStartedUtc": "2026-10-01T09:16:11.8179539Z",
+  "logMetadata": [
+    {
+      "name": "skse64.log",
+      "lastWriteUtc": "2026-10-01T09:16:24.9826730Z",
+      "bytes": 1728
+    },
+    {
+      "name": "skyrim-platform.log",
+      "lastWriteUtc": "2026-10-01T09:16:25.3309861Z",
+      "bytes": 1370
+    },
+    {
+      "name": "MeridianUI.log",
+      "lastWriteUtc": "2026-10-01T09:16:49.2983375Z",
+      "bytes": 4068
+    }
+  ],
+  "sksePluginLoaded": true,
+  "meridianPluginLoaded": true,
+  "directoryMonitorError": false,
+  "javascriptInitializationError": false,
+  "viewCreated": true,
+  "domReady": true,
+  "moduleInspectionAvailable": true,
+  "modules": [
+    {
+      "name": "MeridianUIPlugin.dll",
+      "sha256": "7711079EECD7E05317E5889DB26E25A2D4DB9A89575ECC3521721E50A7E41794",
+      "version": "1.5.0.0"
+    },
+    {
+      "name": "MeridianUI.dll",
+      "sha256": "0384A21F296147941069523A3A410994DB6399CD4306C9293E9B66AD8C8FA0FE",
+      "version": "1.5.0.0"
+    },
+    {
+      "name": "libcef.dll",
+      "sha256": "05D04025A2D053970D663692EEBE0CEC0E754422B008119855A94307117431C5",
+      "version": "152.0.6+g708dc14+chromium-152.0.7977.83"
+    },
+    {
+      "name": "chrome_elf.dll",
+      "sha256": "62BE5F6E98A5F752F3BC261270A2F07F18C716C9BE5E898F585DCC77580EE75F",
+      "version": "152.0.7977.83"
+    },
+    {
+      "name": "SkyrimPlatform.dll",
+      "sha256": "DD4D483F7C13897C2B96218EB8A2C747C61A0618CC38A3275EF03BBF0892151E",
+      "version": "2.9.0.0"
+    },
+    {
+      "name": "SkyrimPlatformImpl.dll",
+      "sha256": "8AE377F695BE956318FFE5757718DF42B3847CC75F2597036B3F3911A8C39DFF",
+      "version": "2.9.0.0"
+    },
+    {
+      "name": "libnode.dll",
+      "sha256": "F22C87FA55E3C0E8B5626FD94C801BA7F1BF581E6FA555CE702C44E553D2D210",
+      "version": "23.2.0"
+    },
+    {
+      "name": "MpClientPlugin.dll",
+      "sha256": "A35B6F35E00ABA5EFA558D6EFC97ADD20E5EA2014C8AAB54F442C798FEECE58C",
+      "version": null
+    }
+  ],
+  "legacySubprocessCount": 0,
+  "logAnchors": {
+    "skse": [
+      "SKSE64 runtime: initialize (version = 2.2.6 01064920 01DD5185812A7A67, os = 6.2 (9200))",
+      "plugin MeridianUIPlugin.dll (00000001 MeridianUI 000186A5) loaded correctly (handle 1)",
+      "plugin SkyrimPlatform.dll (00000001 SkyrimPlatform 02090000) loaded correctly (handle 2)"
+    ],
+    "platform": [
+      "[06:16:17:879] browser backend: Meridian.View/1 (legacy CEF excluded)",
+      "[06:16:20:675] Meridian.View/1 acquired at InputLoaded; legacy CEF excluded",
+      "[06:16:22:850] Meridian HUD: 2 independent SpriteFonts loaded",
+      "[06:16:25:069] Meridian: created view 1, generation 1",
+      "[06:16:25:331] Meridian: DOM ready for view 1"
+    ],
+    "meridian": [
+      "[2026-10-01 06:16:16.664] [14944] [info] [:] ShutdownHook: installed at 7FF7C9B4EB1E",
+      "[2026-10-01 06:16:20.486] [14944] [warning] [:] RenderDevice: RingBuffer browser transport is unsupported on this game adapter; SyncCopy fallback enabled",
+      "[2026-10-01 06:16:20.675] [14944] [info] [:] CEFService::CEFInitialize successfully on application thread 6202892139181241175",
+      "[2026-10-01 06:16:20.675] [14944] [info] [:] Meridian.View/1 requested by 'aetherius-client'",
+      "[2026-10-01 06:16:25.069] [14944] [info] [:] ViewAPIController: created Meridian.View/aetherius-client/SkyrimPlatform_Default as handle 1",
+      "[2026-10-01 06:16:25.073] [20600] [info] [:] CEFService: browser 1 registered",
+      "[2026-10-01 06:16:25.355] [14944] [info] [:] CEFSyncCopyRenderLayer: texture created",
+      "[2026-10-01 06:16:49.298] [14944] [debug] [:] FocusArbiter: captured player running=true for focus generation 1"
+    ]
+  },
+  "coverage": "Snapshot plus existing log excerpts, possibly from a previous session: correlate logMetadata and processStartedUtc manually. Module hashes require moduleInspectionAvailable=true. No-process/legacy count after exit cannot establish modules or subprocesses for the prior session. DOM readiness is not proof of handshake, authenticated gameplay, voice, or stability. UI checks require separate observations."
+}

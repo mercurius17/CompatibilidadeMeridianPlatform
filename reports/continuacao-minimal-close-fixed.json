@@ -1,0 +1,46 @@
+{
+  "capturedUtc": "2026-10-01T05:53:54.6377182Z",
+  "label": "minimal-close-fixed",
+  "profile": [
+    "selected_profile=@ByteArray(TESTE MERIDIAN - MINIMO - 20261001-retomada)"
+  ],
+  "currentGameProcessCount": 0,
+  "sksePluginLoaded": true,
+  "meridianPluginLoaded": true,
+  "directoryMonitorError": false,
+  "javascriptInitializationError": false,
+  "viewCreated": true,
+  "domReady": true,
+  "moduleInspectionAvailable": false,
+  "modules": [],
+  "legacySubprocessCount": 0,
+  "logAnchors": {
+    "skse": [
+      "SKSE64 runtime: initialize (version = 2.2.6 01064920 01DD51691B3BC2C5, os = 6.2 (9200))",
+      "plugin MeridianUIPlugin.dll (00000001 MeridianUI 000186A5) loaded correctly (handle 1)",
+      "plugin SkyrimPlatform.dll (00000001 SkyrimPlatform 02090000) loaded correctly (handle 2)"
+    ],
+    "platform": [
+      "[02:52:56:192] browser backend: Meridian.View/1 (legacy CEF excluded)",
+      "[02:52:58:819] Meridian.View/1 acquired at InputLoaded; legacy CEF excluded",
+      "[02:52:59:744] Meridian HUD: 2 independent SpriteFonts loaded",
+      "[02:53:06:672] Meridian: created view 1, generation 1",
+      "[02:53:09:961] Meridian: DOM ready for view 1"
+    ],
+    "meridian": [
+      "[2026-10-01 02:52:56.165] [6328] [info] [:] ShutdownHook: installed at 7FF6DAE0EB1E",
+      "[2026-10-01 02:52:58.663] [6328] [warning] [:] RenderDevice: RingBuffer browser transport is unsupported on this game adapter; SyncCopy fallback enabled",
+      "[2026-10-01 02:52:58.819] [6328] [info] [:] CEFService::CEFInitialize successfully on application thread 1912238086448633845",
+      "[2026-10-01 02:52:58.819] [6328] [info] [:] Meridian.View/1 requested by 'aetherius-client'",
+      "[2026-10-01 02:53:06.672] [6328] [info] [:] ViewAPIController: created Meridian.View/aetherius-client/SkyrimPlatform_Default as handle 1",
+      "[2026-10-01 02:53:06.675] [25188] [info] [:] CEFService: browser 1 registered",
+      "[2026-10-01 02:53:10.011] [6328] [info] [:] CEFSyncCopyRenderLayer: texture created",
+      "[2026-10-01 02:53:31.006] [6328] [debug] [:] FocusArbiter: captured player running=true for focus generation 1",
+      "[2026-10-01 02:53:33.443] [6328] [info] [:] PublicAPIController: shutdown requested; rejecting new browser work",
+      "[2026-10-01 02:53:33.443] [6328] [info] [:] CEFService: shutdown requested on application thread 1912238086448633845 (1 active, 0 pending)",
+      "[2026-10-01 02:53:33.446] [6328] [info] [:] CEFService: entering CefShutdown on application thread 1912238086448633845",
+      "[2026-10-01 02:53:33.599] [6328] [info] [:] CEFService::CEFShutdown successfully"
+    ]
+  },
+  "coverage": "Initialization log excerpts only; module hashes require moduleInspectionAvailable=true. DOM readiness is not proof of handshake, authenticated gameplay, voice, or long-term stability. UI checks must be documented separately."
+}

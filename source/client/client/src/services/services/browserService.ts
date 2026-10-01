@@ -20,25 +20,34 @@ export class BrowserService extends ClientListener {
     this.controller.on("browserMessage", (e) => this.onBrowserMessage(e));
     this.controller.on("menuOpen", (e) => this.onMenuOpen(e));
     this.controller.on("menuClose", (e) => this.onMenuClose(e));
-    this.controller.on("update", () => this.syncFocus());
+    // Native browser state remains available while menus suppress update.
+    this.controller.on("tick", () => this.syncFocus());
   }
 
   // TODO: keycodes should be configurable
   private onQueryKeyCodeBindings(e: QueryKeyCodeBindings) {
-    if (e.isDown([DxScanCode.F1])) {
+    // Focused Meridian shortcuts arrive via the DOM bridge. Do not toggle
+    // them a second time via the game's physical keyboard query.
+    const backend = (this.sp.browser as any).getBackend?.();
+    this.domOwnedKeys.forEach(key => {
+      if (!e.isDown([key])) this.domOwnedKeys.delete(key);
+    });
+    if (backend?.name === "meridian" && this.sp.browser.isFocused()) return;
+    const isDown = (key: DxScanCode) => !this.domOwnedKeys.has(key) && e.isDown([key]);
+    if (isDown(DxScanCode.F1)) {
       FormView.isDisplayingNicknames = !FormView.isDisplayingNicknames;
     }
-    if (e.isDown([DxScanCode.F2])) {
+    if (isDown(DxScanCode.F2)) {
       this.sp.browser.setVisible(!this.sp.browser.isVisible());
     }
-    if (this.badMenusOpen.size === 0 && e.isDown([DxScanCode.F6])) {
+    if (this.badMenusOpen.size === 0 && isDown(DxScanCode.F6)) {
       const newState = !this.sp.browser.isFocused();
       this.sp.browser.setFocused(newState);
     }
-    if (this.badMenusOpen.size === 0 && e.isDown([DxScanCode.Enter])) {
+    if (this.badMenusOpen.size === 0 && isDown(DxScanCode.Enter)) {
       this.sp.browser.setFocused(true);
     }
-    if (e.isDown([DxScanCode.Escape])) {
+    if (isDown(DxScanCode.Escape)) {
       if (this.sp.browser.isFocused()) {
         this.sp.browser.setFocused(false);
       }
@@ -56,6 +65,8 @@ export class BrowserService extends ClientListener {
       this.controller.emitter.emit("browserWindowLoaded", {});
     }
     if (e.arguments[0] === "aetherius::browser-shortcut") {
+      const key = ({ F1: DxScanCode.F1, F2: DxScanCode.F2, F6: DxScanCode.F6, Escape: DxScanCode.Escape } as Record<string, DxScanCode>)[e.arguments[1] as string];
+      if (key !== undefined) this.domOwnedKeys.add(key);
       switch (e.arguments[1]) {
         case "F1": FormView.isDisplayingNicknames = !FormView.isDisplayingNicknames; break;
         case "F2": this.sp.browser.setVisible(false); break;
@@ -79,6 +90,9 @@ export class BrowserService extends ClientListener {
   }
   private lastActualFocus = false;
   private lastFocusBlocked = false;
+  // Keep ownership until a keyboard query observes release, including when
+  // the DOM shortcut relinquishes focus before the physical query arrives.
+  private domOwnedKeys = new Set<DxScanCode>();
 
   private onMenuOpen(e: MenuOpenEvent) {
     if (this.isBadMenu(e.name)) {

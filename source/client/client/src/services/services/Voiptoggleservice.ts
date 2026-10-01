@@ -5,7 +5,8 @@ import { BridgeService } from "./BridgeService";
 const VOIP_SHORTCUT_KEY = 47;
 
 // Segurar-pra-falar: fala enquanto V estiver pressionada. Só as bordas
-// (apertou/soltou) viram mensagem — o polling roda a cada frame.
+// (apertou/soltou) viram mensagem. O serviço de teclado emite quando muda
+// a quantidade de teclas; foco precisa ser observado independentemente.
 export class VoipToggleService extends ClientListener {
     constructor(private sp: Sp, private controller: CombinedController) {
         super();
@@ -19,6 +20,12 @@ export class VoipToggleService extends ClientListener {
                 this.controller.lookupListener(BridgeService).setPushToTalk(isDown);
             }
             this.wasDown = isDown;
+        });
+        this.controller.on("tick", () => {
+            if (this.wasDown && this.sp.browser.isFocused()) {
+                this.controller.lookupListener(BridgeService).setPushToTalk(false);
+                this.wasDown = false;
+            }
         });
     }
 

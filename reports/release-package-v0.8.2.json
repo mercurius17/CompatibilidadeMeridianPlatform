@@ -1,0 +1,587 @@
+{
+  "schema": 1,
+  "status": "Publication approved by user; startup scope only",
+  "clientVersion": "v0.8.2",
+  "patchVersion": "v0.1.0",
+  "modName": "AETHERIUS - MERIDIAN - COMPATIBILIDADE",
+  "modTag": "AETHERIUS.-.MERIDIAN.-.COMPATIBILIDADE-v1.0.0",
+  "baselineTag": "v0.8.1",
+  "baselineAssetId": 602197793,
+  "baselineZipSha256": "4BD9615AB3211805A51A34F901FB92B0DFD98AF82A1B98DDAAD5DCC0BB18B2C7",
+  "candidate": "20261001-090924",
+  "clientZipSha256": "51F63DA130714B737E25A4C46C8B547994A3F17C24546D5947CE9FA29F682550",
+  "clientBytes": 434717285,
+  "modZipSha256": "589C874063E56FA3D89BEB12432A3BDFDB5671695B69B407F86AB082DF88801B",
+  "modBytes": 40709415,
+  "clientEntryCount": 2158,
+  "modEntryCount": 65,
+  "unchangedCount": 2084,
+  "changes": [
+    {
+      "path": "client/Data/Platform/Distribution/RuntimeDependencies/SkyrimPlatformImpl.dll",
+      "bytes": 15401472,
+      "sha256": "8AE377F695BE956318FFE5757718DF42B3847CC75F2597036B3F3911A8C39DFF",
+      "baselineSha256": "71E090F1B4222CD50CFD8DD07FFEE6DF872A85EBBF65504462DB5AF04304950F",
+      "change": "replaced"
+    },
+    {
+      "path": "client/Data/Platform/Plugins/skymp5-client.js",
+      "bytes": 1488717,
+      "sha256": "15DB5ADD2D7FE3B3BB73FD9CDC7047F492CC9B4F5BFF3DDFF16BFF32B194B065",
+      "baselineSha256": "168C73631F95332CD8A0A44EF61C11CEF22C7BA0E961D0DD341C02E8F6A65A4E",
+      "change": "replaced"
+    },
+    {
+      "path": "client/Data/SKSE/Plugins/SkyrimPlatform.dll",
+      "bytes": 140288,
+      "sha256": "DD4D483F7C13897C2B96218EB8A2C747C61A0618CC38A3275EF03BBF0892151E",
+      "baselineSha256": "601C78CB566B3B1739C46A0CB5C915AF2064D4E932163C458EF8CCFD2403F989",
+      "change": "replaced"
+    },
+    {
+      "path": "client/modOrganizer/profiles/AETHERIUS - GRAFICO - QUALIDADE/modlist.txt",
+      "bytes": 19186,
+      "sha256": "4C83DDE914A9A611283AF2A66763DA50971B73F57FC30C60C7F36C33B4BF2CEB",
+      "baselineSha256": "B483CCB8E3B8F3F2E8C756B1E0AB169C588D06689FD9188C546CD6DFA3EBFA30",
+      "change": "replaced"
+    },
+    {
+      "path": "client/modOrganizer/profiles/AETHERIUS - PERFORMANCE/modlist.txt",
+      "bytes": 19186,
+      "sha256": "F1663F38E244A67E4DEB502D6A491BF9797AC053412D2AFB9C2762CF71C13BA7",
+      "baselineSha256": "B00B360CFD75F118547292B41F01F1967E0FD12B286239EFCFFABE457C2FFE4D",
+      "change": "replaced"
+    },
+    {
+      "path": "client/Data/MeridianUI/aetherius-client/bootstrap.js",
+      "bytes": 3570,
+      "sha256": "2BF902305E70F93FCB8B79E57B9C4AB1BEA56BE19BC43C10FD3ECA905A3C7C79",
+      "baselineSha256": null,
+      "change": "added"
+    },
+    {
+      "path": "client/Data/MeridianUI/aetherius-client/index.html",
+      "bytes": 33910,
+      "sha256": "1371E2E684460EF01A7CC39583DBD9B000BF387AC1413593C4CEA82788E56111",
+      "baselineSha256": null,
+      "change": "added"
+    },
+    {
+      "path": "client/Data/MeridianUI/aetherius-client/widgets.js",
+      "bytes": 2376,
+      "sha256": "4B4A5B8AAA026AA2706E67FE916D4482163B394C47A6AAF9A629328626C10A2A",
+      "baselineSha256": null,
+      "change": "added"
+    },
+    {
+      "path": "client/Data/SKSE/Plugins/SkyrimPlatform.ini",
+      "bytes": 235,
+      "sha256": "52B604AD4C095A1640514EEAB1DFDC6FBA3971144B980CA43C86EF8CD596E321",
+      "baselineSha256": null,
+      "change": "added"
+    },
+    {
+      "path": "client/modOrganizer/mods/AETHERIUS - MERIDIAN - COMPATIBILIDADE/MeridianUI/aetherius-client/bootstrap.js",
+      "bytes": 3570,
+      "sha256": "2BF902305E70F93FCB8B79E57B9C4AB1BEA56BE19BC43C10FD3ECA905A3C7C79",
+      "baselineSha256": null,
+      "change": "added"
+    },
+    {
+      "path": "client/modOrganizer/mods/AETHERIUS - MERIDIAN - COMPATIBILIDADE/MeridianUI/aetherius-client/index.html",
+      "bytes": 33910,
+      "sha256": "1371E2E684460EF01A7CC39583DBD9B000BF387AC1413593C4CEA82788E56111",
+      "baselineSha256": null,
+      "change": "added"
+    },
+    {
+      "path": "client/modOrganizer/mods/AETHERIUS - MERIDIAN - COMPATIBILIDADE/MeridianUI/aetherius-client/widgets.js",
+      "bytes": 2376,
+      "sha256": "4B4A5B8AAA026AA2706E67FE916D4482163B394C47A6AAF9A629328626C10A2A",
+      "baselineSha256": null,
+      "change": "added"
+    },
+    {
+      "path": "client/modOrganizer/mods/AETHERIUS - MERIDIAN - COMPATIBILIDADE/Platform/Distribution/RuntimeDependencies/libnode.dll",
+      "bytes": 109094912,
+      "sha256": "F22C87FA55E3C0E8B5626FD94C801BA7F1BF581E6FA555CE702C44E553D2D210",
+      "baselineSha256": null,
+      "change": "added"
+    },
+    {
+      "path": "client/modOrganizer/mods/AETHERIUS - MERIDIAN - COMPATIBILIDADE/Platform/Distribution/RuntimeDependencies/SkyrimPlatformImpl.dll",
+      "bytes": 15401472,
+      "sha256": "8AE377F695BE956318FFE5757718DF42B3847CC75F2597036B3F3911A8C39DFF",
+      "baselineSha256": null,
+      "change": "added"
+    },
+    {
+      "path": "client/modOrganizer/mods/AETHERIUS - MERIDIAN - COMPATIBILIDADE/Platform/Plugins/skymp5-client.js",
+      "bytes": 1488717,
+      "sha256": "15DB5ADD2D7FE3B3BB73FD9CDC7047F492CC9B4F5BFF3DDFF16BFF32B194B065",
+      "baselineSha256": null,
+      "change": "added"
+    },
+    {
+      "path": "client/modOrganizer/mods/AETHERIUS - MERIDIAN - COMPATIBILIDADE/SKSE/Plugins/SkyrimPlatform.dll",
+      "bytes": 140288,
+      "sha256": "DD4D483F7C13897C2B96218EB8A2C747C61A0618CC38A3275EF03BBF0892151E",
+      "baselineSha256": null,
+      "change": "added"
+    },
+    {
+      "path": "client/modOrganizer/mods/AETHERIUS - MERIDIAN - COMPATIBILIDADE/SKSE/Plugins/SkyrimPlatform.ini",
+      "bytes": 235,
+      "sha256": "52B604AD4C095A1640514EEAB1DFDC6FBA3971144B980CA43C86EF8CD596E321",
+      "baselineSha256": null,
+      "change": "added"
+    },
+    {
+      "path": "client/modOrganizer/mods/AETHERIUS - MERIDIAN - COMPATIBILIDADE/LICENSE.txt",
+      "bytes": 35823,
+      "sha256": "230184F60BAE2FEAF244F10A8BAC053C8FF33A183BCC365B4D8B876D2B7F4809",
+      "baselineSha256": null,
+      "change": "added"
+    },
+    {
+      "path": "client/modOrganizer/mods/AETHERIUS - MERIDIAN - COMPATIBILIDADE/THIRD_PARTY_NOTICES.md",
+      "bytes": 2494,
+      "sha256": "225554489597FA76DF737B2C9226D58E278188759C44253F9141356B08297963",
+      "baselineSha256": null,
+      "change": "added"
+    },
+    {
+      "path": "client/modOrganizer/mods/AETHERIUS - MERIDIAN - COMPATIBILIDADE/licenses/NODE-LICENSE-v23.2.0.txt",
+      "bytes": 139053,
+      "sha256": "F0CB1AD806BA5D681F378A8CC2E539FE4B54839290EDA3C814EC8994AF2B8422",
+      "baselineSha256": null,
+      "change": "added"
+    },
+    {
+      "path": "client/modOrganizer/mods/AETHERIUS - MERIDIAN - COMPATIBILIDADE/PUBLICACAO.md",
+      "bytes": 4874,
+      "sha256": "8C0FF5CD15E7CEE8A984B38D539D0A72B9E16D0084212CE29E4E201D8AE2F4C8",
+      "baselineSha256": null,
+      "change": "added"
+    },
+    {
+      "path": "client/modOrganizer/mods/AETHERIUS - MERIDIAN - COMPATIBILIDADE/licenses/Meridian-SDK-LICENSE-MIT.txt",
+      "bytes": 1164,
+      "sha256": "0A4454C54414C45F33884F98B9A87A2DD3A1A4020C985E98A3D2B53C37CE2D80",
+      "baselineSha256": null,
+      "change": "added"
+    },
+    {
+      "path": "client/modOrganizer/mods/AETHERIUS - MERIDIAN - COMPATIBILIDADE/licenses/dependencies/antigo/copyright",
+      "bytes": 7652,
+      "sha256": "E3A994D82E644B03A792A930F574002658412F62407F5FEE083F2555C5F23118",
+      "baselineSha256": null,
+      "change": "added"
+    },
+    {
+      "path": "client/modOrganizer/mods/AETHERIUS - MERIDIAN - COMPATIBILIDADE/licenses/dependencies/asio/copyright",
+      "bytes": 1338,
+      "sha256": "C9BFF75738922193E67FA726FA225535870D2AA1059F91452C411736284AD566",
+      "baselineSha256": null,
+      "change": "added"
+    },
+    {
+      "path": "client/modOrganizer/mods/AETHERIUS - MERIDIAN - COMPATIBILIDADE/licenses/dependencies/brotli/copyright",
+      "bytes": 1084,
+      "sha256": "3D180008E36922A4E8DAEC11C34C7AF264FED5962D07924AEA928C38E8663C94",
+      "baselineSha256": null,
+      "change": "added"
+    },
+    {
+      "path": "client/modOrganizer/mods/AETHERIUS - MERIDIAN - COMPATIBILIDADE/licenses/dependencies/bshoshany-thread-pool/copyright",
+      "bytes": 1076,
+      "sha256": "712A867CC12EBFCDECF6CEA097F5AA7EC5ACAA435A8F818C9F370960DF35ACBF",
+      "baselineSha256": null,
+      "change": "added"
+    },
+    {
+      "path": "client/modOrganizer/mods/AETHERIUS - MERIDIAN - COMPATIBILIDADE/licenses/dependencies/bzip2/copyright",
+      "bytes": 1896,
+      "sha256": "C6DBBF828498BE844A89EAA3B84ADBAB3199E342EB5CB2ED2F0D4BA7EC0F38A3",
+      "baselineSha256": null,
+      "change": "added"
+    },
+    {
+      "path": "client/modOrganizer/mods/AETHERIUS - MERIDIAN - COMPATIBILIDADE/licenses/dependencies/catch2/copyright",
+      "bytes": 1338,
+      "sha256": "C9BFF75738922193E67FA726FA225535870D2AA1059F91452C411736284AD566",
+      "baselineSha256": null,
+      "change": "added"
+    },
+    {
+      "path": "client/modOrganizer/mods/AETHERIUS - MERIDIAN - COMPATIBILIDADE/licenses/dependencies/cef-prebuilt/copyright",
+      "bytes": 1662,
+      "sha256": "058C3827FFB827FF3EDDA471AE7E1BB1D1AA5931985F0126043CCD33409E792F",
+      "baselineSha256": null,
+      "change": "added"
+    },
+    {
+      "path": "client/modOrganizer/mods/AETHERIUS - MERIDIAN - COMPATIBILIDADE/licenses/dependencies/cmakerc/copyright",
+      "bytes": 1095,
+      "sha256": "1C82C1FFF4D71C2728E422D36A456F8E8311A937457044AD7DDD567C828A45D0",
+      "baselineSha256": null,
+      "change": "added"
+    },
+    {
+      "path": "client/modOrganizer/mods/AETHERIUS - MERIDIAN - COMPATIBILIDADE/licenses/dependencies/commonlibsse-ng-flatrim/copyright",
+      "bytes": 1074,
+      "sha256": "F8F983D0D1E2BB361F117487465F21F5F4047ACCA3610F7ABA3482D524C83CE4",
+      "baselineSha256": null,
+      "change": "added"
+    },
+    {
+      "path": "client/modOrganizer/mods/AETHERIUS - MERIDIAN - COMPATIBILIDADE/licenses/dependencies/cpp-httplib/copyright",
+      "bytes": 1075,
+      "sha256": "4B45CBE16D7B71B89AE6127E26E0D90A029198CA5E958AD8E3D0B8BBED364D8B",
+      "baselineSha256": null,
+      "change": "added"
+    },
+    {
+      "path": "client/modOrganizer/mods/AETHERIUS - MERIDIAN - COMPATIBILIDADE/licenses/dependencies/cpptrace/copyright",
+      "bytes": 1085,
+      "sha256": "8AC69CB836D165EDD51212074441C1794B1F6712783D59014B773EEED133D4D3",
+      "baselineSha256": null,
+      "change": "added"
+    },
+    {
+      "path": "client/modOrganizer/mods/AETHERIUS - MERIDIAN - COMPATIBILIDADE/licenses/dependencies/curl/copyright",
+      "bytes": 2055,
+      "sha256": "543457A53893D439AC029F115C15940C0921CE1B919DB501BBAD266E2A4D1059",
+      "baselineSha256": null,
+      "change": "added"
+    },
+    {
+      "path": "client/modOrganizer/mods/AETHERIUS - MERIDIAN - COMPATIBILIDADE/licenses/dependencies/directxmath/copyright",
+      "bytes": 1141,
+      "sha256": "C2CFCCB812FE482101A8F04597DFC5A9991A6B2748266C47AC91B6A5AAE15383",
+      "baselineSha256": null,
+      "change": "added"
+    },
+    {
+      "path": "client/modOrganizer/mods/AETHERIUS - MERIDIAN - COMPATIBILIDADE/licenses/dependencies/directxtex/copyright",
+      "bytes": 1141,
+      "sha256": "C2CFCCB812FE482101A8F04597DFC5A9991A6B2748266C47AC91B6A5AAE15383",
+      "baselineSha256": null,
+      "change": "added"
+    },
+    {
+      "path": "client/modOrganizer/mods/AETHERIUS - MERIDIAN - COMPATIBILIDADE/licenses/dependencies/directxtk/copyright",
+      "bytes": 1141,
+      "sha256": "C2CFCCB812FE482101A8F04597DFC5A9991A6B2748266C47AC91B6A5AAE15383",
+      "baselineSha256": null,
+      "change": "added"
+    },
+    {
+      "path": "client/modOrganizer/mods/AETHERIUS - MERIDIAN - COMPATIBILIDADE/licenses/dependencies/fmt/copyright",
+      "bytes": 1431,
+      "sha256": "07580F2A3B35709CE703D523F447B242F6DFEC7582A8C0DF102C7FA2849375F8",
+      "baselineSha256": null,
+      "change": "added"
+    },
+    {
+      "path": "client/modOrganizer/mods/AETHERIUS - MERIDIAN - COMPATIBILIDADE/licenses/dependencies/frida-gum/copyright",
+      "bytes": 5696,
+      "sha256": "00764FCC23F0F2AC6D2619A1F9192E55176ECAAA525E76A47AAABC5D87FB087F",
+      "baselineSha256": null,
+      "change": "added"
+    },
+    {
+      "path": "client/modOrganizer/mods/AETHERIUS - MERIDIAN - COMPATIBILIDADE/licenses/dependencies/ga-sdk-cpp/copyright",
+      "bytes": 1071,
+      "sha256": "3E69FE57702626E6B9D0DBFEF0999DEA52BF6C30A28315AF6B31A7545848D125",
+      "baselineSha256": null,
+      "change": "added"
+    },
+    {
+      "path": "client/modOrganizer/mods/AETHERIUS - MERIDIAN - COMPATIBILIDADE/licenses/dependencies/libarchive/copyright",
+      "bytes": 3089,
+      "sha256": "30E556B3959E3985D66EFEFEC5EAAC51D4995053CAA1D3CFFE6EB916F146F229",
+      "baselineSha256": null,
+      "change": "added"
+    },
+    {
+      "path": "client/modOrganizer/mods/AETHERIUS - MERIDIAN - COMPATIBILIDADE/licenses/dependencies/libbson/copyright",
+      "bytes": 20867,
+      "sha256": "38A5B9A7E9F5BC1D22B3A816F1ACBFD487181AE2D1A21419556AF0629772FD9C",
+      "baselineSha256": null,
+      "change": "added"
+    },
+    {
+      "path": "client/modOrganizer/mods/AETHERIUS - MERIDIAN - COMPATIBILIDADE/licenses/dependencies/liblzma/copyright",
+      "bytes": 3119,
+      "sha256": "616A3AD264CE29B8F1CB97E53037B139D406899CA8D1F799651E17BFA09830B8",
+      "baselineSha256": null,
+      "change": "added"
+    },
+    {
+      "path": "client/modOrganizer/mods/AETHERIUS - MERIDIAN - COMPATIBILIDADE/licenses/dependencies/libsodium/copyright",
+      "bytes": 823,
+      "sha256": "508A76D186356C0DD807A670EF510964F8724557024796A2C426C6C0E19AB683",
+      "baselineSha256": null,
+      "change": "added"
+    },
+    {
+      "path": "client/modOrganizer/mods/AETHERIUS - MERIDIAN - COMPATIBILIDADE/licenses/dependencies/libzip/copyright",
+      "bytes": 1454,
+      "sha256": "01C022ECA6D566E2E8792FD0F091A28653B2A608319922BCD4DE91C49D1438E1",
+      "baselineSha256": null,
+      "change": "added"
+    },
+    {
+      "path": "client/modOrganizer/mods/AETHERIUS - MERIDIAN - COMPATIBILIDADE/licenses/dependencies/libzippp/copyright",
+      "bytes": 1445,
+      "sha256": "184F3ECF3D8CF4AFFAD2B322EDE037FB79A14E8B5B20C38CCBB66E33C23180D9",
+      "baselineSha256": null,
+      "change": "added"
+    },
+    {
+      "path": "client/modOrganizer/mods/AETHERIUS - MERIDIAN - COMPATIBILIDADE/licenses/dependencies/lz4/copyright",
+      "bytes": 1311,
+      "sha256": "8B58C446121A109CCF32EDC094BBA3010A3D85E4EE3702950DB55E4D3E87736C",
+      "baselineSha256": null,
+      "change": "added"
+    },
+    {
+      "path": "client/modOrganizer/mods/AETHERIUS - MERIDIAN - COMPATIBILIDADE/licenses/dependencies/makeid/copyright",
+      "bytes": 306,
+      "sha256": "2D6C3A410C38875C899C2DCF1083BDBE186121CA9C90A8D552A176A2FE75E477",
+      "baselineSha256": null,
+      "change": "added"
+    },
+    {
+      "path": "client/modOrganizer/mods/AETHERIUS - MERIDIAN - COMPATIBILIDADE/licenses/dependencies/mhook/copyright",
+      "bytes": 1150,
+      "sha256": "C3B7E4ACC215A9C8A41D6801D68DCAEA62FDB84D05D419C2013AFCAF7EA969A2",
+      "baselineSha256": null,
+      "change": "added"
+    },
+    {
+      "path": "client/modOrganizer/mods/AETHERIUS - MERIDIAN - COMPATIBILIDADE/licenses/dependencies/miniz/copyright",
+      "bytes": 1184,
+      "sha256": "0115478D567121238CF6CC1C0C361926CF07A49D9E4C9E66DA97FAC6A01646B3",
+      "baselineSha256": null,
+      "change": "added"
+    },
+    {
+      "path": "client/modOrganizer/mods/AETHERIUS - MERIDIAN - COMPATIBILIDADE/licenses/dependencies/mongo-c-driver/copyright",
+      "bytes": 21046,
+      "sha256": "FEB660F4CD820CC7CCAC97D3C0CB73675DADF5A2C3358023AF19BF60EE03B169",
+      "baselineSha256": null,
+      "change": "added"
+    },
+    {
+      "path": "client/modOrganizer/mods/AETHERIUS - MERIDIAN - COMPATIBILIDADE/licenses/dependencies/mongo-cxx-driver/copyright",
+      "bytes": 11325,
+      "sha256": "CB5E8E7E5F4A3988E1063C142C60DC2DF75605F4C46515E776E3ACA6DF976E14",
+      "baselineSha256": null,
+      "change": "added"
+    },
+    {
+      "path": "client/modOrganizer/mods/AETHERIUS - MERIDIAN - COMPATIBILIDADE/licenses/dependencies/nirnlab-ui-platform-headers/copyright",
+      "bytes": 1065,
+      "sha256": "98215A3B35FA9C7B80D9B10E4D325862F644A3146A0B1AE98A6D628D3327768F",
+      "baselineSha256": null,
+      "change": "added"
+    },
+    {
+      "path": "client/modOrganizer/mods/AETHERIUS - MERIDIAN - COMPATIBILIDADE/licenses/dependencies/nlohmann-json/copyright",
+      "bytes": 1076,
+      "sha256": "46A65CFFD1EA955132D95A8DD921640714A8D6B537D2E4E482D31145AE95B603",
+      "baselineSha256": null,
+      "change": "added"
+    },
+    {
+      "path": "client/modOrganizer/mods/AETHERIUS - MERIDIAN - COMPATIBILIDADE/licenses/dependencies/node-addon-api/copyright",
+      "bytes": 1150,
+      "sha256": "89024017B88A9F2B763F79B941A4F2DB3B4428EDFCACDC0B23866B2DA633AD0C",
+      "baselineSha256": null,
+      "change": "added"
+    },
+    {
+      "path": "client/modOrganizer/mods/AETHERIUS - MERIDIAN - COMPATIBILIDADE/licenses/dependencies/node-api-headers/copyright",
+      "bytes": 1064,
+      "sha256": "A553508F516031C91F3AF1148D44970CB81BBAE6C4F091BE6835D39CC252238C",
+      "baselineSha256": null,
+      "change": "added"
+    },
+    {
+      "path": "client/modOrganizer/mods/AETHERIUS - MERIDIAN - COMPATIBILIDADE/licenses/dependencies/node-embedder-api-prebuilt/copyright",
+      "bytes": 5696,
+      "sha256": "00764FCC23F0F2AC6D2619A1F9192E55176ECAAA525E76A47AAABC5D87FB087F",
+      "baselineSha256": null,
+      "change": "added"
+    },
+    {
+      "path": "client/modOrganizer/mods/AETHERIUS - MERIDIAN - COMPATIBILIDADE/licenses/dependencies/openssl/copyright",
+      "bytes": 10175,
+      "sha256": "7D5450CB2D142651B8AFA315B5F238EFC805DAD827D91BA367D8516BC9D49E7A",
+      "baselineSha256": null,
+      "change": "added"
+    },
+    {
+      "path": "client/modOrganizer/mods/AETHERIUS - MERIDIAN - COMPATIBILIDADE/licenses/dependencies/prometheus-cpp-lite/copyright",
+      "bytes": 1082,
+      "sha256": "5CF0BF33DF0A90D55AB967C08F58E5CF8414D4B33EDF9B806583C2F392D1BF9A",
+      "baselineSha256": null,
+      "change": "added"
+    },
+    {
+      "path": "client/modOrganizer/mods/AETHERIUS - MERIDIAN - COMPATIBILIDADE/licenses/dependencies/rapidcsv/copyright",
+      "bytes": 1518,
+      "sha256": "8E60B029B7A16C4087AF1E8DC695E4412F36F46819AA2FE1EF445E7776E40594",
+      "baselineSha256": null,
+      "change": "added"
+    },
+    {
+      "path": "client/modOrganizer/mods/AETHERIUS - MERIDIAN - COMPATIBILIDADE/licenses/dependencies/rapidjson/copyright",
+      "bytes": 5152,
+      "sha256": "A140E5D46FE734A1C78F1A3C3EF207871DD75648BE71FDDA8E309B23AB8B1F32",
+      "baselineSha256": null,
+      "change": "added"
+    },
+    {
+      "path": "client/modOrganizer/mods/AETHERIUS - MERIDIAN - COMPATIBILIDADE/licenses/dependencies/robin-hood-hashing/copyright",
+      "bytes": 1075,
+      "sha256": "686CF8D62CC44FECFF4BE967238ABA89665F9B6ACF8A728987801FFC3A626BC7",
+      "baselineSha256": null,
+      "change": "added"
+    },
+    {
+      "path": "client/modOrganizer/mods/AETHERIUS - MERIDIAN - COMPATIBILIDADE/licenses/dependencies/rsm-binary-io/copyright",
+      "bytes": 1070,
+      "sha256": "EBEEEFA102269964EA6C45CED49D6D33DF40CB7BACCCB983A9F84B6140AFC73B",
+      "baselineSha256": null,
+      "change": "added"
+    },
+    {
+      "path": "client/modOrganizer/mods/AETHERIUS - MERIDIAN - COMPATIBILIDADE/licenses/dependencies/rsm-bsa/copyright",
+      "bytes": 1070,
+      "sha256": "EBEEEFA102269964EA6C45CED49D6D33DF40CB7BACCCB983A9F84B6140AFC73B",
+      "baselineSha256": null,
+      "change": "added"
+    },
+    {
+      "path": "client/modOrganizer/mods/AETHERIUS - MERIDIAN - COMPATIBILIDADE/licenses/dependencies/rsm-mmio/copyright",
+      "bytes": 1070,
+      "sha256": "EBEEEFA102269964EA6C45CED49D6D33DF40CB7BACCCB983A9F84B6140AFC73B",
+      "baselineSha256": null,
+      "change": "added"
+    },
+    {
+      "path": "client/modOrganizer/mods/AETHERIUS - MERIDIAN - COMPATIBILIDADE/licenses/dependencies/simdjson/copyright",
+      "bytes": 12675,
+      "sha256": "8BBA4C86681E778878AD5BBFF33BAA524D450B2A42E256F3B931FC58A5EC2BFD",
+      "baselineSha256": null,
+      "change": "added"
+    },
+    {
+      "path": "client/modOrganizer/mods/AETHERIUS - MERIDIAN - COMPATIBILIDADE/licenses/dependencies/simpleini/copyright",
+      "bytes": 1089,
+      "sha256": "1F8D19CBA3D929F45F74B8E7CDF84B2FEE5B96BE69D08D0084ED728316F9F2C2",
+      "baselineSha256": null,
+      "change": "added"
+    },
+    {
+      "path": "client/modOrganizer/mods/AETHERIUS - MERIDIAN - COMPATIBILIDADE/licenses/dependencies/slikenet/copyright",
+      "bytes": 4260,
+      "sha256": "0BC9800A2DC2D2B01FCE0632006DA853C14D924D64F40BD0DE978AB883BB9037",
+      "baselineSha256": null,
+      "change": "added"
+    },
+    {
+      "path": "client/modOrganizer/mods/AETHERIUS - MERIDIAN - COMPATIBILIDADE/licenses/dependencies/spdlog/copyright",
+      "bytes": 1323,
+      "sha256": "D678C20826E1392578508E1C78649A1E3C31BDA05EF4388D967DBD654461B140",
+      "baselineSha256": null,
+      "change": "added"
+    },
+    {
+      "path": "client/modOrganizer/mods/AETHERIUS - MERIDIAN - COMPATIBILIDADE/licenses/dependencies/sqlite3/copyright",
+      "bytes": 71,
+      "sha256": "3CAFDD9B568B924B234B91F4A24649D509F02643AE727EAC6A4E33818288C9C4",
+      "baselineSha256": null,
+      "change": "added"
+    },
+    {
+      "path": "client/modOrganizer/mods/AETHERIUS - MERIDIAN - COMPATIBILIDADE/licenses/dependencies/utf8proc/copyright",
+      "bytes": 5125,
+      "sha256": "3B510150D34F248A221BB88E1D811238D6C6C18B51231822C42974C39BB07256",
+      "baselineSha256": null,
+      "change": "added"
+    },
+    {
+      "path": "client/modOrganizer/mods/AETHERIUS - MERIDIAN - COMPATIBILIDADE/licenses/dependencies/xbyak/copyright",
+      "bytes": 1501,
+      "sha256": "7E411D5C5D38501A504843F58AFB6824439C828872B35D2FF1E892E73FD1A30D",
+      "baselineSha256": null,
+      "change": "added"
+    },
+    {
+      "path": "client/modOrganizer/mods/AETHERIUS - MERIDIAN - COMPATIBILIDADE/licenses/dependencies/zlib/copyright",
+      "bytes": 1002,
+      "sha256": "845EFC77857D485D91FB3E0B884AAA929368C717AE8186B66FE1ED2495753243",
+      "baselineSha256": null,
+      "change": "added"
+    },
+    {
+      "path": "client/modOrganizer/mods/AETHERIUS - MERIDIAN - COMPATIBILIDADE/licenses/dependencies/zstd/copyright",
+      "bytes": 20086,
+      "sha256": "434DCA949C6DA7C500413AEF694539FE37F867DD1A94D83D4ED1D260194E2660",
+      "baselineSha256": null,
+      "change": "added"
+    }
+  ],
+  "overlayEntries": [
+    {
+      "path": "MeridianUI/aetherius-client/bootstrap.js",
+      "bytes": 3570,
+      "sha256": "2BF902305E70F93FCB8B79E57B9C4AB1BEA56BE19BC43C10FD3ECA905A3C7C79"
+    },
+    {
+      "path": "MeridianUI/aetherius-client/index.html",
+      "bytes": 33910,
+      "sha256": "1371E2E684460EF01A7CC39583DBD9B000BF387AC1413593C4CEA82788E56111"
+    },
+    {
+      "path": "MeridianUI/aetherius-client/widgets.js",
+      "bytes": 2376,
+      "sha256": "4B4A5B8AAA026AA2706E67FE916D4482163B394C47A6AAF9A629328626C10A2A"
+    },
+    {
+      "path": "Platform/Distribution/RuntimeDependencies/libnode.dll",
+      "bytes": 109094912,
+      "sha256": "F22C87FA55E3C0E8B5626FD94C801BA7F1BF581E6FA555CE702C44E553D2D210"
+    },
+    {
+      "path": "Platform/Distribution/RuntimeDependencies/SkyrimPlatformImpl.dll",
+      "bytes": 15401472,
+      "sha256": "8AE377F695BE956318FFE5757718DF42B3847CC75F2597036B3F3911A8C39DFF"
+    },
+    {
+      "path": "Platform/Plugins/skymp5-client.js",
+      "bytes": 1488717,
+      "sha256": "15DB5ADD2D7FE3B3BB73FD9CDC7047F492CC9B4F5BFF3DDFF16BFF32B194B065"
+    },
+    {
+      "path": "SKSE/Plugins/SkyrimPlatform.dll",
+      "bytes": 140288,
+      "sha256": "DD4D483F7C13897C2B96218EB8A2C747C61A0618CC38A3275EF03BBF0892151E"
+    },
+    {
+      "path": "SKSE/Plugins/SkyrimPlatform.ini",
+      "bytes": 235,
+      "sha256": "52B604AD4C095A1640514EEAB1DFDC6FBA3971144B980CA43C86EF8CD596E321"
+    }
+  ],
+  "officialProfiles": "Only one new highest-priority mod line per profile; all other baseline bytes preserved",
+  "legacyCef": "Retained baseline assets; integrated runtime does not use legacy browser",
+  "newGameTests": false,
+  "gameWrites": false,
+  "mo2Writes": false,
+  "release": "prepared, pending remote confirmation"
+}

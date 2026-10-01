@@ -1,0 +1,65 @@
+{
+  "capturedUtc": "2026-10-01T09:26:25.6163905Z",
+  "label": "candidate-090924-shutdown2-20261001-092625",
+  "profile": [
+    "selected_profile=@ByteArray(TESTE MERIDIAN - MINIMO - 20261001-090924)"
+  ],
+  "currentGameProcessCount": 0,
+  "processStartedUtc": null,
+  "logMetadata": [
+    {
+      "name": "skse64.log",
+      "lastWriteUtc": "2026-10-01T09:22:47.7019792Z",
+      "bytes": 1728
+    },
+    {
+      "name": "skyrim-platform.log",
+      "lastWriteUtc": "2026-10-01T09:25:10.9938980Z",
+      "bytes": 1476
+    },
+    {
+      "name": "MeridianUI.log",
+      "lastWriteUtc": "2026-10-01T09:25:10.3565034Z",
+      "bytes": 4892
+    }
+  ],
+  "sksePluginLoaded": true,
+  "meridianPluginLoaded": true,
+  "directoryMonitorError": false,
+  "javascriptInitializationError": false,
+  "viewCreated": true,
+  "domReady": true,
+  "moduleInspectionAvailable": false,
+  "modules": [],
+  "legacySubprocessCount": 0,
+  "logAnchors": {
+    "skse": [
+      "SKSE64 runtime: initialize (version = 2.2.6 01064920 01DD518668DE4879, os = 6.2 (9200))",
+      "plugin MeridianUIPlugin.dll (00000001 MeridianUI 000186A5) loaded correctly (handle 1)",
+      "plugin SkyrimPlatform.dll (00000001 SkyrimPlatform 02090000) loaded correctly (handle 2)"
+    ],
+    "platform": [
+      "[06:22:41:838] browser backend: Meridian.View/1 (legacy CEF excluded)",
+      "[06:22:43:886] Meridian.View/1 acquired at InputLoaded; legacy CEF excluded",
+      "[06:22:45:821] Meridian HUD: 2 independent SpriteFonts loaded",
+      "[06:22:47:787] Meridian: created view 1, generation 1",
+      "[06:22:50:280] Meridian: DOM ready for view 1",
+      "[06:25:10:252] Normal engine shutdown requested on the game thread"
+    ],
+    "meridian": [
+      "[2026-10-01 06:22:41.816] [4256] [info] [:] ShutdownHook: installed at 7FF7C9B4EB1E",
+      "[2026-10-01 06:22:43.758] [4256] [warning] [:] RenderDevice: RingBuffer browser transport is unsupported on this game adapter; SyncCopy fallback enabled",
+      "[2026-10-01 06:22:43.886] [4256] [info] [:] CEFService::CEFInitialize successfully on application thread 13875108451966050213",
+      "[2026-10-01 06:22:43.886] [4256] [info] [:] Meridian.View/1 requested by 'aetherius-client'",
+      "[2026-10-01 06:22:47.787] [4256] [info] [:] ViewAPIController: created Meridian.View/aetherius-client/SkyrimPlatform_Default as handle 1",
+      "[2026-10-01 06:22:47.791] [10332] [info] [:] CEFService: browser 1 registered",
+      "[2026-10-01 06:22:50.328] [4256] [info] [:] CEFSyncCopyRenderLayer: texture created",
+      "[2026-10-01 06:23:13.291] [4256] [debug] [:] FocusArbiter: captured player running=true for focus generation 1",
+      "[2026-10-01 06:25:10.252] [4256] [info] [:] PublicAPIController: shutdown requested; rejecting new browser work",
+      "[2026-10-01 06:25:10.252] [4256] [info] [:] CEFService: shutdown requested on application thread 13875108451966050213 (1 active, 0 pending)",
+      "[2026-10-01 06:25:10.254] [4256] [info] [:] CEFService: entering CefShutdown on application thread 13875108451966050213",
+      "[2026-10-01 06:25:10.357] [4256] [info] [:] CEFService::CEFShutdown successfully"
+    ]
+  },
+  "coverage": "Snapshot plus existing log excerpts, possibly from a previous session: correlate logMetadata and processStartedUtc manually. Module hashes require moduleInspectionAvailable=true. No-process/legacy count after exit cannot establish modules or subprocesses for the prior session. DOM readiness is not proof of handshake, authenticated gameplay, voice, or stability. UI checks require separate observations."
+}

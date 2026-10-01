@@ -1,0 +1,18 @@
+asset skymp5-client.js 1.42 MiB [emitted] (name: main)
+runtime modules 937 bytes 4 modules
+modules by path ./src/services/ 379 KiB 57 modules
+modules by path ./src/view/*.ts 49.2 KiB 8 modules
+modules by path ./src/sync/*.ts 43.8 KiB 8 modules
+modules by path ./src/*.ts 12.5 KiB 4 modules
+modules by path ./src/lib/*.ts 3.97 KiB
+  ./src/lib/errors.ts 1.5 KiB [built] [code generated]
+  + 3 modules
+modules by path ./src/extensions/*.ts 3.29 KiB
+  ./src/extensions/objectReferenceEx.ts 2.62 KiB [built] [code generated]
+  ./src/extensions/formTypeEx.ts 691 bytes [built] [code generated]
+modules by path ./node_modules/eventemitter3/ 9.02 KiB
+  ./node_modules/eventemitter3/index.mjs 91 bytes [built] [code generated]
+  ./node_modules/eventemitter3/index.js 8.93 KiB [built] [code generated]
++ 6 modules
+webpack 5.94.0 compiled successfully in 2971 ms
+

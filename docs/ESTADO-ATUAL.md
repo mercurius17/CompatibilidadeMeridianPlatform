@@ -1,5 +1,33 @@
 # Estágio atual — 01/10/2026
 
+## Encerramento dos testes e publicação autorizada
+
+O usuário considerou bem-sucedido o teste de abertura no perfil oficial de
+Qualidade, encerrou os testes e solicitou a publicação. Essa aprovação substitui
+a antiga proibição de publicar o candidato, mas não amplia o escopo das
+evidências. A distribuição usa exatamente o par 090924 e o bundle conferidos;
+não há novo teste ou recompilação. Ver [PUBLICACAO-20261001.md](PUBLICACAO-20261001.md)
+e os relatórios de empacotamento/publicação. As seções seguintes preservam o
+histórico e as funções ainda não homologadas.
+
+## Atualização após revisão da contribuição
+
+Implementação retomada a pedido do usuário. O candidato mais recente é
+`20261001-090924`: compilado, 26/26 Node e 2/2 CTest aprovados, oito arquivos
+do ZIP verificados e instalado em três perfis TESTE novos. **Carregamento até o
+menu, hashes dos módulos e dois fechamentos pelo botão da interface confirmados
+em duas sessões; também observado carregamento no perfil oficial de Qualidade,
+por escolha do usuário. UI completa e homologação dos perfis ainda pendentes.** O shutdown foi
+registrado na thread do jogo e o CEF encerrou com sucesso;
+há proteções adicionais para fechamento/reconexão, foco e PTT. Consulte
+[REVISAO-CONTINUACAO.md](REVISAO-CONTINUACAO.md) para hashes, escopo e evidências.
+
+A contribuição relata teste positivo de menu/fechamento com o par histórico
+034454, sem inspeção dos módulos. Não é a execução de smoke com hashes abaixo.
+O restante desta página descreve o histórico inicial, com as correções de estado
+assinaladas. Releases antigos e código do launcher são preservados. O usuário ativou o
+mod TESTE no perfil oficial de Qualidade; o agente não alterou essa configuração.
+
 ## Resumo de execução
 
 A implementação foi feita em checkouts isolados do runtime e do client. Os checkouts originais com alterações locais foram preservados. Nenhum commit/push, release ou alteração de launcher/client de produção foi realizado naquela etapa.
@@ -25,7 +53,7 @@ Na abertura até o menu:
 
 Evidência sanitizada: [snapshot](../reports/smoke-runtime-snapshot-20261001-034334.json). É **um snapshot pontual**, não vigilância durante toda a sessão. Presença de módulo não substitui os logs de inicialização nem prova funcionalidade da interface.
 
-## Falha encontrada e correção não homologada
+## Falha inicial de configuração
 
 O runtime registrou:
 
@@ -42,7 +70,7 @@ Correção já feita em fonte e compilada:
 - GetPathsSemicolonSeparated passa a usar os próprios parâmetros section/key/defaultValue, em vez de constantes internas.
 - Acrescentado teste que impede reintroduzir PluginsDev na configuração distribuída.
 
-As DLLs dessa correção estão em `binaries/current-20261001-034454`. **Ainda não foram instaladas no mod de teste nem abertas no jogo.** O snapshot de smoke refere-se exclusivamente à versão anterior.
+As DLLs dessa correção estão em `binaries/current-20261001-034454`. A contribuição posterior relata abertura e fechamento desse par no menu, sem confirmar os módulos carregados. O snapshot inicial de smoke com hashes refere-se exclusivamente à versão anterior. O candidato 090924 teve seus módulos conferidos em execução e saída normal pelo botão confirmada nos logs; funcionalidade completa e repetição continuam pendentes.
 
 ## O que está implementado
 
@@ -62,19 +90,29 @@ As DLLs dessa correção estão em `binaries/current-20261001-034454`. **Ainda n
 |---|---|
 | Carregamento conjunto na versão smoke | Observado no perfil mínimo, até o menu |
 | Ausência CEF legado na versão smoke | Observada no snapshot de módulos/processos |
-| Versão atual com correção PluginsDev | Compilada; teste real pendente |
+| Par 034454, PluginsDev corrigido | Teste de menu/fechamento relatado na contribuição; hashes de módulos não observados |
+| Novo candidato 090924 | Dois ciclos mínimos de abrir/fechar e hashes confirmados; demais funções pendentes |
+| Qualidade oficial com overlay TESTE | Abertura, logs e hashes confirmados; apenas carregamento, não homologação |
 | UI completa e mensagens bidirecionais reais | Pendente |
 | Login permitido/negado e launcher | Pendente |
 | Spawn, multiplayer, HUD/nomes e menus | Pendente |
 | Voz envio/recepção, PTT e spatialização | Pendente |
 | Foco/input, outros consumidores Meridian e PrismaUI | Pendente |
-| Shutdown/reabertura e sessão prolongada | Pendente |
+| Shutdown/reabertura e sessão prolongada | Dois ciclos mínimos confirmados; estabilidade e perfis completos pendentes |
 | Perfis completos Qualidade/Performance | Pendente |
 | Instalação limpa, atualização e recuperação | Pendente |
-| Pacote/release oficial | Não preparado nem publicado |
+| Pacote/release oficial | Publicação solicitada; pacote v0.8.2 e mod com hashes verificados; confirmação no relatório de publicação |
+| Prévia local de client | ZIP com estrutura client/ e entradas verificadas; baseline histórica, não instalar/publicar |
 
 O HTML baseline tem o scaffold de chat textual comentado. Este trabalho não habilitou nem inventou um protocolo de chat; essa limitação precisa ser esclarecida antes de aprovar o requisito original de chat. Voz mantém o WebSocket original; origem mod://, permissões e efeitos sobre áudio ainda dependem de teste real.
 
 ## Ponto de retomada
 
-O usuário pediu para interromper os testes e continuar posteriormente. Não foi aplicado o novo candidato após essa pausa. Quando houver autorização para retomada: instalar somente no mod de teste, conferir hashes, repetir primeiro a abertura mínima e observar ausência do erro DirectoryMonitor; só depois avançar para os dois perfis completos e servidor de teste.
+Após os dois ciclos mínimos, o usuário pediu somente teste de abertura usando
+o perfil oficial de Qualidade, com o mod TESTE ativado por ele. Esse carregamento
+foi conferido e não foram solicitados testes adicionais. Avançou-se para uma
+prévia local do pacote: `client-preview-20261001-094535`. Ela conserva profiles
+históricos e recursos CEF antigos, portanto ainda não é instalável/aprovada para
+o launcher. Próximos passos offline: revisar baseline/perfis atuais, consumidores
+das dependências e licenças. Login, voz e multiplayer continuam não homologados;
+nenhum release foi publicado.

@@ -1,0 +1,10 @@
+Test project <COMPAT_REPO>/local-artifacts/tests/native
+    Start 1: meridian_policy
+1/2 Test #1: meridian_policy ..................   Passed    0.10 sec
+    Start 2: meridian_public_api_boundary
+2/2 Test #2: meridian_public_api_boundary .....   Passed    0.03 sec
+
+100% tests passed, 0 tests failed out of 2
+
+Total Test time (real) =   0.14 sec
+

@@ -12,10 +12,11 @@ export class AccessRevokedService extends ClientListener {
         super();
         this.controller.emitter.on("customPacketMessage", (e: any) => this.onCustomPacketMessage(e));
         this.controller.on("browserMessage", (e) => this.onBrowserMessage(e));
-        this.controller.on("update", () => this.onUpdate());
+        this.controller.on("tick", () => this.processPendingQuit());
     }
 
     private onCustomPacketMessage(event: any): void {
+        if (this.closing || this.quitRequested) return;
         let content: Record<string, unknown> = {};
         try {
             content = JSON.parse(event.message.contentJsonDump);
@@ -42,15 +43,17 @@ export class AccessRevokedService extends ClientListener {
     }
 
     private onBrowserMessage(e: BrowserMessageEvent): void {
+        if (this.closing) return;
         if (e.arguments[0] === CONFIRM_MESSAGE) this.quitRequested = true;
     }
 
-    // Fecha no "update", não dentro do evento do navegador: funções do Papyrus
-    // (Debug.QuitGame) não podem ser chamadas desse contexto.
-    private onUpdate(): void {
-        if (!this.quitRequested) return;
+    // O menu principal não produz update/Papyrus. No próximo tick, solicita
+    // a saída normal do engine sem executar uma função Papyrus no navegador.
+    private processPendingQuit(): void {
+        if (this.closing || !this.quitRequested) return;
+        this.closing = true;
         this.quitRequested = false;
-        this.sp.Debug.quitGame();
+        this.sp.win32.exitProcess();
     }
 
     /** O ServerDownService não mostra "conexão perdida" por cima deste aviso. */
@@ -60,4 +63,5 @@ export class AccessRevokedService extends ClientListener {
 
     private quitRequested = false;
     private showing = false;
+    private closing = false;
 }

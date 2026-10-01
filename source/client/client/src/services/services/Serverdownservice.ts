@@ -30,12 +30,15 @@ export class ServerDownService extends ClientListener {
         this.controller.emitter.on("connectionDenied", () => this.onConnectionUnavailable());
         this.controller.emitter.on("customPacketMessage", (e: any) => this.onCustomPacketMessage(e));
         this.controller.on("browserMessage", (e) => this.onBrowserMessage(e));
-        this.controller.on("update", () => this.onUpdate());
         // "tick" roda também com menu aberto, diferente de "update".
-        this.controller.on("tick", () => this.checkSilence());
+        this.controller.on("tick", () => {
+            this.processPendingActions();
+            this.checkSilence();
+        });
     }
 
     private onCustomPacketMessage(event: any): void {
+        if (this.closing || this.quitRequested) return;
         let type: unknown;
         try {
             type = JSON.parse(event.message.contentJsonDump)["customPacketType"];
@@ -51,6 +54,7 @@ export class ServerDownService extends ClientListener {
     }
 
     private checkSilence(): void {
+        if (this.closing || this.quitRequested) return;
         const now = Date.now();
         if (this.lastCheckAt && now - this.lastCheckAt > FROZEN_GAP_MS) {
             this.lastHeardAt = now;
@@ -62,6 +66,8 @@ export class ServerDownService extends ClientListener {
     }
 
     private onConnectionAccepted(): void {
+        if (this.closing || this.quitRequested) return;
+        this.reconnectRequested = false;
         this.everConnected = true;
         this.lastHeardAt = Date.now();
         if (!this.popupShown) return;
@@ -86,7 +92,7 @@ export class ServerDownService extends ClientListener {
     private goDown(): void {
         // Antes do primeiro login quem cuida é a tela de login; ban tem o
         // pop-up próprio; fechando o jogo não há o que mostrar.
-        if (!this.everConnected || this.quitRequested || this.popupShown) return;
+        if (!this.everConnected || this.closing || this.quitRequested || this.popupShown) return;
         if (this.controller.lookupListener(AccessRevokedService).isShowing()) return;
 
         const networking = this.networking();
@@ -100,26 +106,33 @@ export class ServerDownService extends ClientListener {
     }
 
     private onConnectionUnavailable(): void {
+        if (this.closing || this.quitRequested) return;
         if (!this.popupShown || !this.reconnecting) return;
         this.reconnecting = false;
         this.show("failed");
     }
 
     private onBrowserMessage(e: BrowserMessageEvent): void {
+        if (this.closing || this.quitRequested) return;
         const kind = e.arguments[0];
         if (kind === RECONNECT_MESSAGE && this.popupShown && !this.reconnecting) {
             this.reconnectRequested = true;
         } else if (kind === CLOSE_MESSAGE) {
+            this.reconnectRequested = false;
             this.quitRequested = true;
         }
     }
 
-    // Ações no "update": Debug.QuitGame é Papyrus e não pode ser chamado de
-    // dentro do evento do navegador.
-    private onUpdate(): void {
+    // Processa fora do callback do navegador, mesmo no menu principal. A API
+    // win32.exitProcess solicita a saída normal via Main::quitGame; não depende
+    // do update/Papyrus e não termina o processo à força.
+    private processPendingActions(): void {
+        if (this.closing) return;
         if (this.quitRequested) {
+            this.closing = true;
+            this.reconnectRequested = false;
             this.quitRequested = false;
-            this.sp.Debug.quitGame();
+            this.sp.win32.exitProcess();
             return;
         }
         if (this.reconnectRequested) {
@@ -158,4 +171,5 @@ export class ServerDownService extends ClientListener {
     private reconnecting = false;
     private reconnectRequested = false;
     private quitRequested = false;
+    private closing = false;
 }

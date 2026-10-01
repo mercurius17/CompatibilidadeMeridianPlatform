@@ -1,0 +1,140 @@
+TAP version 13
+# Subtest: diagnostic runs in the embedded global API without a Node skyrimPlatform package
+ok 1 - diagnostic runs in the embedded global API without a Node skyrimPlatform package
+  ---
+  duration_ms: 3.6742
+  ...
+# Subtest: queued messages snapshot JSON values and preserve argument order/Unicode
+ok 2 - queued messages snapshot JSON values and preserve argument order/Unicode
+  ---
+  duration_ms: 2.6029
+  ...
+# Subtest: front-loaded follows DOM readiness, once, after bridge-ready
+ok 3 - front-loaded follows DOM readiness, once, after bridge-ready
+  ---
+  duration_ms: 0.9341
+  ...
+# Subtest: DOMContentLoaded before attachment still sends front-loaded exactly once
+ok 4 - DOMContentLoaded before attachment still sends front-loaded exactly once
+  ---
+  duration_ms: 1.0101
+  ...
+# Subtest: invalid/replaced generation cannot attach or relabel old work
+ok 5 - invalid/replaced generation cannot attach or relabel old work
+  ---
+  duration_ms: 1.4609
+  ...
+# Subtest: provider missing does not drop queued messages
+ok 6 - provider missing does not drop queued messages
+  ---
+  duration_ms: 0.8128
+  ...
+# Subtest: queue count, UTF-8 byte and argument limits are enforced
+ok 7 - queue count, UTF-8 byte and argument limits are enforced
+  ---
+  duration_ms: 10.322
+  ...
+# Subtest: unsupported/cyclic values are explicit errors, not changed wire types
+ok 8 - unsupported/cyclic values are explicit errors, not changed wire types
+  ---
+  duration_ms: 1.0575
+  ...
+# Subtest: pagehide cancels queued work and rejects subsequent sends
+ok 9 - pagehide cancels queued work and rejects subsequent sends
+  ---
+  duration_ms: 0.8122
+  ...
+# Subtest: focused shortcuts forward once; modal close and repeated keys are respected
+ok 10 - focused shortcuts forward once; modal close and repeated keys are respected
+  ---
+  duration_ms: 1.0708
+  ...
+# Subtest: packaged Meridian configuration does not require a development folder
+ok 11 - packaged Meridian configuration does not require a development folder
+  ---
+  duration_ms: 1.6054
+  ...
+# Subtest: disconnect popup closes on the next tick while gameplay updates are absent
+ok 12 - disconnect popup closes on the next tick while gameplay updates are absent
+  ---
+  duration_ms: 108.3903
+  ...
+# Subtest: disconnect popup reconnects once on tick without a gameplay update
+ok 13 - disconnect popup reconnects once on tick without a gameplay update
+  ---
+  duration_ms: 23.9358
+  ...
+# Subtest: access-revoked confirmation closes on tick in a menu
+ok 14 - access-revoked confirmation closes on tick in a menu
+  ---
+  duration_ms: 14.6464
+  ...
+# Subtest: access-revoked UI failure can request normal shutdown without Papyrus
+ok 15 - access-revoked UI failure can request normal shutdown without Papyrus
+  ---
+  duration_ms: 10.4901
+  ...
+# Subtest: close cancels a queued reconnect and makes shutdown terminal
+ok 16 - close cancels a queued reconnect and makes shutdown terminal
+  ---
+  duration_ms: 24.2719
+  ...
+# Subtest: connection accepted cancels a reconnect queued before its tick
+ok 17 - connection accepted cancels a reconnect queued before its tick
+  ---
+  duration_ms: 18.8705
+  ...
+# Subtest: repeated revoked confirmation cannot queue another shutdown
+ok 18 - repeated revoked confirmation cannot queue another shutdown
+  ---
+  duration_ms: 8.247
+  ...
+# Subtest: BrowserService reports actual focus, not an asynchronous request
+ok 19 - BrowserService reports actual focus, not an asynchronous request
+  ---
+  duration_ms: 113.6595
+  ...
+# Subtest: browserMessage contract forwards readiness and focused close shortcuts
+ok 20 - browserMessage contract forwards readiness and focused close shortcuts
+  ---
+  duration_ms: 28.1036
+  ...
+# Subtest: PTT typing guard releases V on browser focus and resumes outside it
+ok 21 - PTT typing guard releases V on browser focus and resumes outside it
+  ---
+  duration_ms: 9.1415
+  ...
+# Subtest: PTT releases on menu tick without a new keyboard-count event
+ok 22 - PTT releases on menu tick without a new keyboard-count event
+  ---
+  duration_ms: 6.8197
+  ...
+# Subtest: focused Meridian hotkeys have only the DOM handler as owner
+ok 23 - focused Meridian hotkeys have only the DOM handler as owner
+  ---
+  duration_ms: 25.1689
+  ...
+# Subtest: DOM F6 does not refocus if its physical query arrives after focus release
+ok 24 - DOM F6 does not refocus if its physical query arrives after focus release
+  ---
+  duration_ms: 18.5583
+  ...
+# Subtest: form/input/password/button contract preserves callbacks without HTML evaluation
+ok 25 - form/input/password/button contract preserves callbacks without HTML evaluation
+  ---
+  duration_ms: 4.9613
+  ...
+# Subtest: invalid widget updates cannot clear a previously valid form; empty array clears it
+ok 26 - invalid widget updates cannot clear a previously valid form; empty array clears it
+  ---
+  duration_ms: 1.5869
+  ...
+1..26
+# tests 26
+# suites 0
+# pass 26
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 508.6272

@@ -17,6 +17,19 @@ Napi::Value Win32Api::LoadUrl(const Napi::CallbackInfo& info)
 
 Napi::Value Win32Api::ExitProcess(const Napi::CallbackInfo& info)
 {
-  RE::Main::GetSingleton()->quitGame = true;
+  // JS tick runs outside the game thread. Request normal engine shutdown
+  // through SKSE's task queue; never terminate the process or CEF directly.
+  auto* tasks = SKSE::GetTaskInterface();
+  if (!tasks) {
+    throw std::runtime_error("SKSE task interface unavailable for normal shutdown");
+  }
+  tasks->AddTask([] {
+    if (auto* main = RE::Main::GetSingleton()) {
+      main->quitGame = true;
+      logger::info("Normal engine shutdown requested on the game thread");
+    } else {
+      logger::error("Normal shutdown failed: RE::Main unavailable");
+    }
+  });
   return info.Env().Undefined();
 }

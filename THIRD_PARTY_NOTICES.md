@@ -6,7 +6,14 @@ O SDK Meridian copiado (`Settings.h`, `ViewAPI.h`, `ViewDllLoader.h`) é mantido
 
 `licenses/dependencies` arquiva arquivos copyright disponibilizados pelos ports usados no ambiente local. Esse inventário inclui dependências da toolchain completa, inclusive algumas que não entram no target Meridian. Não inferir linkagem pelo inventário; consulte os manifests CMake/vcpkg e os relatórios PE. Os avisos não substituem a licença própria de cada componente nem garantem que a metadata de todo port seja perfeita.
 
-Não redistribuídos aqui: executáveis do Skyrim, SKSE, MO2, runtime/CEF Meridian, CEF legado, libnode prebuilt, mods de terceiros, bibliotecas instaladas do vcpkg, tokens, credenciais operacionais ou saves pessoais.
+Não versionados neste repositório Git: executáveis do Skyrim, SKSE, MO2, runtime/CEF Meridian, CEF legado, libnode prebuilt, mods de terceiros, bibliotecas instaladas do vcpkg, tokens, credenciais operacionais ou saves pessoais.
+
+Os ZIPs de release do novo mod incluem o libnode prebuilt inalterado da baseline
+oficial, com SHA-256 conferido, e `licenses/NODE-LICENSE-v23.2.0.txt`, obtido da
+licença oficial de nodejs/node na tag v23.2.0. Não se afirma rebuild reproduzível
+do Node customizado. O client completo preserva os componentes e avisos de sua
+baseline oficial, acrescentando o overlay e os avisos de licença deste patch.
+O runtime/CEF Meridian continua instalado separadamente, pelo mod original.
 
 Os sources originários podem conter fixtures de testes e assets versionados na base, não extraídos da instalação pessoal do jogo. Em especial, OpenSSLSignerTest contém chaves de fixture incorporadas no teste; não são credenciais operacionais e não devem ser utilizadas em produção. OpenSSLSigner.cpp contém somente delimitadores de PEM usados pelo parser. Nenhum segredo de conta foi acrescentado à publicação.
 

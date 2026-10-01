@@ -8,7 +8,7 @@ const FormView = { isDisplayingNicknames: false };
 class ClientListener {}
 class BridgeService {}
 const Menu = { HUD: 'HUDMenu', Main: 'MainMenu', Inventory: 'InventoryMenu' };
-const DxScanCode = { F1: 1, F2: 2, F6: 6, Enter: 28, Escape: 1 };
+const DxScanCode = { F1: 59, F2: 60, F6: 64, Enter: 28, Escape: 1 };
 function load(file, name) {
   const source = fs.readFileSync(path.join(__dirname, '../src/services/services', file), 'utf8');
   const js = ts.transpileModule(source, { compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2020 } }).outputText;
@@ -50,14 +50,14 @@ test('BrowserService reports actual focus, not an asynchronous request', () => {
   const BrowserService = load('browserService.ts', 'BrowserService');
   const c = context(); new BrowserService(c.sp, c.controller);
   c.handlers.get('queryKeyCodeBindings')({ isDown: keys => keys.includes(DxScanCode.F6) });
-  c.handlers.get('update')();
+  c.handlers.get('tick')();
   assert.equal(c.scripts.some(s => s.includes("CustomEvent('skymp5-client:browserFocused'")), false);
   assert.ok(c.scripts.some(s => s.includes('__aetheriusFocusUnavailable?.(true)')));
-  c.grantFocus(true); c.handlers.get('update')();
+  c.grantFocus(true); c.handlers.get('tick')();
   assert.equal(c.scripts.filter(s => s.includes("CustomEvent('skymp5-client:browserFocused'")).length, 1);
-  c.handlers.get('update')();
+  c.handlers.get('tick')();
   assert.equal(c.scripts.filter(s => s.includes("CustomEvent('skymp5-client:browserFocused'")).length, 1);
-  c.grantFocus(false); c.handlers.get('update')();
+  c.grantFocus(false); c.handlers.get('tick')();
   assert.ok(c.scripts.some(s => s.includes('browserUnfocused')));
 });
 test('browserMessage contract forwards readiness and focused close shortcuts', () => {
@@ -78,4 +78,40 @@ test('PTT typing guard releases V on browser focus and resumes outside it', () =
   c.grantFocus(true); poll(); assert.deepEqual(c.requests.at(-1), ['ptt', false]);
   const count = c.requests.length; poll(); assert.equal(c.requests.length, count);
   c.grantFocus(false); poll(); assert.deepEqual(c.requests.at(-1), ['ptt', true]);
+});
+
+test('PTT releases on menu tick without a new keyboard-count event', () => {
+  const Service = load('Voiptoggleservice.ts', 'VoipToggleService');
+  const c = context(); new Service(c.sp, c.controller);
+  c.handlers.get('queryKeyCodeBindings')({ isDown: () => true });
+  c.grantFocus(true); c.handlers.get('tick')();
+  assert.deepEqual(c.requests, [['ptt', true], ['ptt', false]]);
+  c.handlers.get('tick')();
+  c.grantFocus(false); c.handlers.get('tick')();
+  assert.equal(c.requests.length, 2, 'losing focus alone must not open the mic');
+});
+
+test('focused Meridian hotkeys have only the DOM handler as owner', () => {
+  const Service = load('browserService.ts', 'BrowserService');
+  const c = context(); new Service(c.sp, c.controller);
+  FormView.isDisplayingNicknames = false;
+  c.grantFocus(true);
+  c.handlers.get('queryKeyCodeBindings')({ isDown: keys => keys.includes(DxScanCode.F1) });
+  assert.equal(FormView.isDisplayingNicknames, false);
+  c.handlers.get('browserMessage')({ arguments: ['aetherius::browser-shortcut', 'F1'] });
+  assert.equal(FormView.isDisplayingNicknames, true);
+});
+
+test('DOM F6 does not refocus if its physical query arrives after focus release', () => {
+  const Service = load('browserService.ts', 'BrowserService');
+  const c = context(); new Service(c.sp, c.controller);
+  c.grantFocus(true);
+  c.handlers.get('browserMessage')({ arguments: ['aetherius::browser-shortcut', 'F6'] });
+  c.grantFocus(false);
+  const count = c.requests.length;
+  c.handlers.get('queryKeyCodeBindings')({ isDown: keys => keys.includes(DxScanCode.F6) });
+  assert.equal(c.requests.length, count);
+  c.handlers.get('queryKeyCodeBindings')({ isDown: () => false });
+  c.handlers.get('queryKeyCodeBindings')({ isDown: keys => keys.includes(DxScanCode.F6) });
+  assert.deepEqual(c.requests.at(-1), ['focus', true], 'the next press works after release');
 });

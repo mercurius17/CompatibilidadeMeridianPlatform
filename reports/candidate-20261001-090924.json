@@ -1,0 +1,89 @@
+{
+  "label": "20261001-090924",
+  "status": "EXPERIMENTAL - NOT HOMOLOGATED - DO NOT PUBLISH",
+  "entries": [
+    {
+      "path": "MeridianUI/aetherius-client/bootstrap.js",
+      "bytes": 3570,
+      "sha256": "2BF902305E70F93FCB8B79E57B9C4AB1BEA56BE19BC43C10FD3ECA905A3C7C79"
+    },
+    {
+      "path": "MeridianUI/aetherius-client/index.html",
+      "bytes": 33910,
+      "sha256": "1371E2E684460EF01A7CC39583DBD9B000BF387AC1413593C4CEA82788E56111"
+    },
+    {
+      "path": "MeridianUI/aetherius-client/widgets.js",
+      "bytes": 2376,
+      "sha256": "4B4A5B8AAA026AA2706E67FE916D4482163B394C47A6AAF9A629328626C10A2A"
+    },
+    {
+      "path": "Platform/Distribution/RuntimeDependencies/libnode.dll",
+      "bytes": 109094912,
+      "sha256": "F22C87FA55E3C0E8B5626FD94C801BA7F1BF581E6FA555CE702C44E553D2D210"
+    },
+    {
+      "path": "Platform/Distribution/RuntimeDependencies/SkyrimPlatformImpl.dll",
+      "bytes": 15401472,
+      "sha256": "8AE377F695BE956318FFE5757718DF42B3847CC75F2597036B3F3911A8C39DFF"
+    },
+    {
+      "path": "Platform/Plugins/skymp5-client.js",
+      "bytes": 1488717,
+      "sha256": "15DB5ADD2D7FE3B3BB73FD9CDC7047F492CC9B4F5BFF3DDFF16BFF32B194B065"
+    },
+    {
+      "path": "SKSE/Plugins/SkyrimPlatform.dll",
+      "bytes": 140288,
+      "sha256": "DD4D483F7C13897C2B96218EB8A2C747C61A0618CC38A3275EF03BBF0892151E"
+    },
+    {
+      "path": "SKSE/Plugins/SkyrimPlatform.ini",
+      "bytes": 235,
+      "sha256": "52B604AD4C095A1640514EEAB1DFDC6FBA3971144B980CA43C86EF8CD596E321"
+    }
+  ],
+  "nativePe": [
+    {
+      "file": "SkyrimPlatform.dll",
+      "sha256": "DD4D483F7C13897C2B96218EB8A2C747C61A0618CC38A3275EF03BBF0892151E",
+      "imports": [
+        "KERNEL32.dll",
+        "USER32.dll"
+      ],
+      "exports": [
+        "SKSEPlugin_Load",
+        "SKSEPlugin_Query",
+        "SKSEPlugin_Version",
+        "SkyrimPlatform_IpcSend",
+        "SkyrimPlatform_IpcSubscribe",
+        "SkyrimPlatform_IpcUnsubscribe"
+      ],
+      "fileVersion": "2.9.0.0"
+    },
+    {
+      "file": "SkyrimPlatformImpl.dll",
+      "sha256": "8AE377F695BE956318FFE5757718DF42B3847CC75F2597036B3F3911A8C39DFF",
+      "imports": [
+        "WS2_32.dll",
+        "libnode.dll",
+        "ADVAPI32.dll",
+        "ole32.dll",
+        "CRYPT32.dll",
+        "KERNEL32.dll",
+        "USER32.dll",
+        "SHELL32.dll",
+        "VERSION.dll"
+      ],
+      "exports": [
+        "SKSEPlugin_Load_Impl",
+        "SkyrimPlatform_IpcSend_Impl",
+        "SkyrimPlatform_IpcSubscribe_Impl",
+        "SkyrimPlatform_IpcUnsubscribe_Impl"
+      ],
+      "fileVersion": "2.9.0.0"
+    }
+  ],
+  "symbolsSha256": "C67F06DE9043BCF7302423E77444D8D335A75A6C8ACB7EFF91E2FE1DF684A555",
+  "coverage": "Verified snapshot equality to native build tree, source/binary freshness, exports and direct imports; not game validation. Historical binaries remain intact."
+}

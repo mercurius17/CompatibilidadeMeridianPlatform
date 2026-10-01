@@ -1,6 +1,31 @@
-# Preparação e homologação — testes pausados
+# Preparação e homologação — retomada isolada
 
-Este guia registra como retomar quando o usuário autorizar. **Não foram iniciados novos testes no jogo durante a preparação desta publicação.**
+Os testes no jogo foram encerrados a pedido do usuário, que aprovou o sucesso
+de abertura e solicitou a publicação. A matriz abaixo documenta limites reais,
+não uma solicitação de novos testes nesta etapa. Para distribuição, consultar
+[PUBLICACAO-20261001.md](PUBLICACAO-20261001.md).
+
+O usuário autorizou a retomada. O candidato `20261001-090924` foi instalado somente
+em perfis TESTE novos, sem trocar o perfil ativo durante a instalação. O usuário
+selecionou o novo mínimo e abriu SKSE: carregamento e hashes dos módulos foram
+conferidos no menu. Dois ciclos de abrir/fechar pela interface foram confirmados:
+solicitação na thread do jogo, shutdown CEF bem-sucedido e processo encerrado.
+Reabertura confirmada com logs novos e hashes dos módulos.
+Perfis completos, foco/input e demais funções continuam pendentes; ver
+[REVISAO-CONTINUACAO.md](REVISAO-CONTINUACAO.md).
+
+## Restrição atual definida pelo usuário
+
+O usuário escolheu o perfil oficial `AETHERIUS - GRAFICO - QUALIDADE`, ativou
+nele o overlay TESTE e pediu **somente abertura**, para aproveitar a configuração
+de shaders existente. O carregamento, hashes, CEF e logs dessa abertura foram
+conferidos. Não solicitar novos testes no jogo nesta etapa nem alterar caches,
+perfil, saves ou o modo de inicialização. O próximo trabalho é offline, no pacote
+experimental local. A matriz abaixo permanece uma lista de homologação pendente,
+não uma aprovação nem uma instrução para executar agora.
+
+Os perfis oficiais e candidatos históricos continuam disponíveis. Nenhuma tela
+de produção deve ser usada para provocar ban/revogação/queda durante a homologação.
 
 ## Retomada local
 
@@ -38,9 +63,26 @@ A execução direta SKSE não recebe AETHERIUS_TOKEN do launcher. A tela que exi
 
 O mínimo anterior conservava MpClientPlugin no Data. Não é teste de instalação limpa. Não há homologação de performance ou estabilidade com base na única abertura.
 
+## Scripts de retomada
+
+`scripts/test-meridian.ps1` executa Node e CTest via MSVC, sem instalação ou jogo.
+`scripts/stage-candidate.ps1` verifica correspondência dos fontes do build,
+exports/imports e prepara um novo par/ZIP local, preservando históricos.
+`scripts/install-test-profiles.ps1` sem `-Install` apenas apresenta o plano;
+um candidato novo exige `-CandidateManifest`, com hashes dos oito arquivos.
+Com `-Install`, jogo e MO2 devem estar fechados; só cria destinos novos e verifica
+hashes dos perfis oficiais e ModOrganizer.ini. Não copia saves ou altera Data.
+`scripts/collect-test-evidence.ps1 -Label <rotulo>` coleta trechos permitidos,
+timestamps de logs e hashes de módulos se disponíveis. Correlacionar datas e
+observações do usuário; logs antigos não são evidência de um novo teste.
+
 ## Produção e recuperação
 
-Os perfis oficiais e Data não foram alterados durante os testes. Para deixar de usar o candidato local, fechar o jogo e sair dos perfis TESTE. Não apagar DLLs/mods originais; o candidato e suas evidências devem ser preservados para diagnóstico.
+O agente não alterou o Data nem os perfis oficiais. O usuário posteriormente
+ativou o overlay TESTE no perfil oficial de Qualidade. Para deixar de usá-lo,
+fechar o jogo/MO2 antes de trocar arquivos e desabilitar esse mod no perfil em
+que foi ativado; sair de um perfil TESTE sozinho já não basta. Não apagar DLLs,
+mods originais ou caches; preservar candidato e evidências para diagnóstico.
 
 Voltar à combinação oficial antiga não garante abertura com Meridian: ela contém o conflito CEF original. Recuperação funcional precisa ser homologada como conjunto.
 
